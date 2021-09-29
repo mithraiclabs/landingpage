@@ -33,6 +33,10 @@ align-items:center;
 display:flex;
 flex-direction:column;
 height:100vh;
+@media screen and (max-width:2560px){
+    
+    height:10vh;
+}
 `
 const Img=styled.div`
 background-color:#000;

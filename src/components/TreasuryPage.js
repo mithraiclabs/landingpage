@@ -30,8 +30,14 @@ background-size: cover;
 justify-content:space-between;
 display:flex;
 flex-direction:column;
-height:120vh;
 align-items:center;
+@media screen and (max-width:2560px){
+   height:75vh;
+ }
+
+ @media screen and (max-width:1440px){
+   height:110vh;
+ }
 @media screen and (max-width:1024px){
     height:120vh;
    }
@@ -44,8 +50,18 @@ align-items:center;
 justify-content:center;
 margin-left:20rem;
 margin-top:16rem;
+@media screen and (max-width:2560px){
+   margin-left:20rem;
+margin-top:25rem;
+ }
+ @media screen and (max-width:1440px){
+   margin-left:20rem;
+margin-top:16rem;
+ }
+
 @media screen and (max-width:1024px){
     margin-left:12rem;
+    margin-top:12rem;
    }
   @media screen and (max-width:768px){
     margin-left:10rem;
@@ -78,6 +94,7 @@ background-color:black;
 width:75%;
 letter-spacing:1px;
 box-shadow: 8px 8px 0px #8BEAFF;
+text-shadow: 0px 0px 20px #0347F7 !important;
 @media screen and (max-width:768px){
    
     width:75%;
@@ -114,6 +131,18 @@ margin-top:27rem;
 background-color:transparent;
 display:flex;
 flex-direction:row;
+@media screen and (max-width:2560px){
+ 
+margin-top:35rem;
+ }
+ @media screen and (max-width:1440px){
+  
+margin-top:27rem;
+ }
+ @media screen and (max-width:1024px){
+  
+   margin-top:25rem;
+    }
 @media screen and (max-width:768px){
     margin-top:18rem;
      }
@@ -142,9 +171,16 @@ background-color:black;
 width:26%;
 text-transform: uppercase;
 margin-left:20rem;
+@media screen and (max-width:2560px){
+   margin-left:18rem;
+ }
+ @media screen and (max-width:1440px){
+   margin-left:20rem;
+
+ }
 @media screen and (max-width:1024px){
     margin-left:12rem;
-    padding-top:2rem;
+    padding-top:1rem;
     letter-spacing:1px;
      }
 @media screen and (max-width:768px){
@@ -187,6 +223,18 @@ width:27%;
 text-transform: uppercase;
 margin-left:45.5rem;
 padding-bottom:1rem;
+
+@media screen and (max-width:2560px){
+   margin-left:56rem;
+   padding-top:2rem;
+   letter-spacing:1px;
+    }
+    
+@media screen and (max-width:1440px){
+   margin-left:45.5rem;
+   padding-top:2rem;
+   letter-spacing:1px;
+    }
 @media screen and (max-width:1024px){
     margin-left:33rem;
     padding-top:2rem;

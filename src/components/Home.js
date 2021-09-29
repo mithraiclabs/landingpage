@@ -47,6 +47,14 @@ justify-content: center,
 align-items: center,
 position:relative;
 height:140vh;
+@media screen and (max-width:2560px){
+    
+  height:55vh;
+}
+@media screen and (max-width:1440px){
+    
+  height:100vh;
+}
 @media screen and (max-width:1024px){
   width:100%;
   height:200vh;
@@ -54,12 +62,12 @@ height:140vh;
  }
 @media screen and (max-width:768px){
   width:100%;
- 
+  height:200vh;
   display:block;
  }
 @media screen and (max-width:425px){
     width:100%;
-    
+    height:145vh;
     display:block;
    }
    @media screen and (max-width:375px){
