@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import background from "../images/Background.png"
-import cube from "../images/cube.png"
+import cube from "../images/Cube.png"
 const BlockChainPage = () => {
     return (
         <Backgroundimg>
