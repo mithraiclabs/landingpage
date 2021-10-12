@@ -1,3 +1,35 @@
 @import '../styles.config.scss';
 
-.index-airdrop {}
+.index-launch-app {
+  margin-bottom: 400px;
+  position: relative;
+  div.ila-content {
+    padding-top: 70px;
+    position: relative;
+    text-align: center;
+    z-index: 5555;
+    h1 {
+      font-size: $fontSizeHeaderMobile;
+      line-height: $lineHeightHeaderMobile;
+      margin-bottom: $contentPaddingLightMobile;
+      text-transform: uppercase;
+    }
+    div {
+      color: $cyan;
+      margin-bottom: $contentPaddingMobile;
+    }
+  }
+  div.ila-background {
+    filter: blur(1px);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    left: 0;
+    height: 100%;
+    margin-left: 17px;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+  }
+}
