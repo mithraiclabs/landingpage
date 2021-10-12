@@ -11,7 +11,6 @@ const Footer = () => {
   return (
     <div className="footer">
       <ul className="f-site-links">
-        <li><Link to="/404">made by mithraiclabs</Link></li>
         <li><Link to="/404">contact form</Link></li>
         <li><Link to="/404">docs</Link></li>
         <li><Link to="/404">careers</Link></li>
@@ -23,6 +22,7 @@ const Footer = () => {
         <li><Link to="/404"><img src ={Discord} alt="Discord"/></Link></li>
         <li><Link to="/404"><img src ={Medium} alt="Medium"/></Link></li>
       </ul>
+      <div className="f-made-by">made by mithraiclabs</div>
     </div>
   )
 }

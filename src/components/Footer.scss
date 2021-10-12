@@ -15,7 +15,12 @@
 .footer {
   $linkSpacing: 20px;
   .f-site-links,
-  .f-social-links {
+  .f-social-links,
+  .f-made-by {
+    margin-bottom: $linkGroupMarginMobile;
+    @media screen and (min-width: $desktopWidth) {
+      margin-bottom: $linkGroupMargin;
+    }
     li {
       display: inline;
     }
@@ -25,10 +30,6 @@
     }
   }
   .f-site-links {
-    margin-bottom: $contentPaddingMobile;
-    @media screen and (min-width: $desktopWidth) {
-      margin-bottom: $contentPadding;
-    }
     li {
       &:not(:last-child):after {
         content: "|";
@@ -44,5 +45,9 @@
         margin-left: 0;
       }
     }
+  }
+  .f-made-by {
+    color: rgba(185, 185, 185);
+    font-size: 13px;
   }
 }

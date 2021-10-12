@@ -1,11 +1,34 @@
+// Color
+
 $linkBlue: #8BEAFF;
-$contentPadding: 55px;
-$contentPaddingMobile: 35px;
-$desktopWidth: 700px;
-$fontSize: 16px;
-$fontSizeH1: $fontSize * 2;
-$fontSizeSuper: $fontSize * 4;
 $glowBlue: #0347F6;
+
+// Layout
+
 $navHeight: 80px;
+$contentPadding: 55px;
+$contentPaddingMobile: 32px;
+$desktopWidth: 700px;
+$linkGroupMarginMobile: 45px;
+$linkGroupMargin: 65px;
 $textBlockMargin: 16px;
 $textBlockMarginMobile: 22px;
+
+// Typography
+
+$fontSize: 16px;
+
+$fontSizeHeaderMobile: $fontSize * 1.5;
+$lineHeightHeaderMobile: $fontSize * 1.4;
+$marginHeaderMobile: $fontSize * 1.2;
+
+$fontSizeHeader: $fontSize * 2;
+$lineHeightHeader: $fontSizeHeader * 1.4;
+$marginHeader: $fontSize * 1.2;
+
+$fontSizeSuperMobile: $fontSize * 2.2;
+$lineHeightSuperMobile: $fontSizeSuperMobile * 1.1;
+$marginSuperMobile: $fontSize * 1.8;
+
+$fontSizeSuper: $fontSize * 4;
+$lineHeightSuper: $fontSizeSuper * 1.1;

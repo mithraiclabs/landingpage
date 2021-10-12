@@ -11,7 +11,7 @@ const Home = () => {
           <h1 className="super">AMERICAN STYLE OPTIONS, ANYTIME, ANYWHERE</h1>
           <div>Trade completely trustless American style options for any SPL token.</div>
         </div>
-        <div>
+        <div className="iia-button-group">
           <Link to="/404" className="p-button">Start trading</Link>
           <Link to="/404" className="p-button">Read our docs</Link>
         </div>
