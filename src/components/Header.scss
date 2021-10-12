@@ -92,26 +92,15 @@ nav.header-nav {
       display: none;
     }
   }
-  .header-nav-button a {
-    color: $linkBlue;
-    display: block;
-    border: 2px solid $linkBlue;
-    font-size: $fontSize;
-    margin: 8px;
-    padding: 42px 0;
-    text-align: center;
-    text-decoration: none;
-    &:hover{
-      color: white;
-    }
-    @media screen and (min-width: $desktopWidth) {
-      display: inline-block;
-      padding: 12px 28px;
-    }
-  }
 }
 
 nav.header-nav {
+  @media screen and (min-width: $desktopWidth) {
+    align-items: center;
+    bottom: unset;
+    flex-flow: unset;
+    justify-content: space-between;
+  }
   &.show-nav {
     bottom: 0;
     display: flex;
@@ -121,6 +110,10 @@ nav.header-nav {
     right: 0;
     top: 0;
     z-index:999;
+    @media screen and (min-width: $desktopWidth) {
+      bottom: unset;
+      flex-flow: unset;
+    }
     ul {
       display: unset;
     }
@@ -138,9 +131,13 @@ nav.header-nav {
       }
     }
     .header-nav-button {
-      position: absolute;
-      left: 85px;
-      top: 5px;
+      display: none;
+      @media screen and (min-width: 350px){
+        display: block;
+        position: absolute;
+        left: 85px;
+        top: 5px;
+      }
       @media screen and (min-width: $desktopWidth) {
         position: relative;
         left: unset;
@@ -151,10 +148,21 @@ nav.header-nav {
       }
     }
   }
-  @media screen and (min-width: $desktopWidth) {
-    align-items: center;
-    bottom: unset;
-    flex-flow: unset;
-    justify-content: space-between;
+  .header-nav-button a {
+    color: $linkBlue;
+    display: block;
+    border: 2px solid $linkBlue;
+    font-size: $fontSize;
+    margin: 8px;
+    padding: 42px 0;
+    text-align: center;
+    text-decoration: none;
+    &:hover{
+      color: white;
+    }
+    @media screen and (min-width: $desktopWidth) {
+      display: inline-block;
+      padding: 12px 28px;
+    }
   }
 }
