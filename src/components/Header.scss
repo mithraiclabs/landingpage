@@ -1,1 +1,153 @@
-.header {}
+@import '../styles.config.scss';
+
+// mobile first 
+
+$desktopWidth: 700px;
+$fontSize: 25px;
+$navHeight: 80px;
+
+nav.header-nav {
+  // * {
+  //   border: 1px solid yellow;
+  // }
+  background: black;
+  position: relative;
+  @media screen and (min-width: $desktopWidth) {
+    align-items: center;
+    bottom: unset;
+    display: flex;
+    flex-flow: unset;
+    justify-content: space-between;
+  }
+}
+
+nav.header-nav {
+  .header-logo {
+    height: $navHeight;
+    position: relative;
+    width: $navHeight;
+    a {
+      bottom: 0;
+      left: 15px;
+      position: absolute;
+      right: 0;
+      top: 15px;
+    }
+  }
+  ul {
+    flex: 2;
+    text-align: center;
+    @media screen and (min-width: $desktopWidth) {
+      flex: 1 1 auto;
+    }
+  }
+  ul li {
+    margin-top: calc(100vh / 12);
+
+    @media screen and (min-height: 350px){
+      margin-top: calc((100vh) / 25);
+    }
+
+    @media screen and (min-height: 400px){
+      margin-top: calc((100vh) / 19);
+    }
+
+    @media screen and (min-height: 525px){
+      margin-top: calc((100vh) / 14);
+    }
+
+    @media screen and (min-height: 670px){
+      margin-top: calc((100vh) / 9);
+    }
+
+    @media screen and (min-height: 880px){
+      margin-top: calc((100vh) / 8);
+    }
+    @media screen and (min-width: $desktopWidth) {
+      margin: 0;
+      display: inline-block;
+      margin-left: 3vw;
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+  ul li a {
+    color: $linkBlue;
+    font-size: $fontSize;
+    text-decoration: none;
+    &:hover{
+      color: white;
+    }
+  }
+  .header-mobile-icon {
+    cursor: pointer;
+    font-size: 35px;
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    @media screen and (min-width: $desktopWidth) {
+      display: none;
+    }
+  }
+  .header-nav-button a {
+    color: $linkBlue;
+    display: block;
+    border: 2px solid $linkBlue;
+    font-size: $fontSize;
+    margin: 8px;
+    padding: 42px 0;
+    text-align: center;
+    text-decoration: none;
+    &:hover{
+      color: white;
+    }
+    @media screen and (min-width: $desktopWidth) {
+      display: inline-block;
+      padding: 12px 28px;
+    }
+  }
+}
+
+nav.header-nav {
+  &.show-nav {
+    bottom: 0;
+    display: flex;
+    flex-flow: column;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index:999;
+    ul {
+      display: unset;
+    }
+  }
+  &.hide-nav {
+    ul {
+      display: none;
+      @media screen and (min-width: $desktopWidth) {
+        display: block;
+      }
+    }
+    .header-nav-button {
+      position: absolute;
+      left: 85px;
+      top: 5px;
+      @media screen and (min-width: $desktopWidth) {
+        position: relative;
+        left: unset;
+        top: unset;
+      }
+      a {
+        padding: 8px 14px;
+      }
+    }
+  }
+  @media screen and (min-width: $desktopWidth) {
+    align-items: center;
+    bottom: unset;
+    flex-flow: unset;
+    justify-content: space-between;
+  }
+}
