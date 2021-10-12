@@ -9,31 +9,18 @@ import {
 } from "react";
 import { IconContext } from "react-icons/lib";
 
-const safeDocument = typeof document !== 'undefined' ? document : {};
-
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  // const [scroll,setScroll] = useState(false);
 
   const handleClick = () => setShowMobileMenu(!showMobileMenu);
   const handleKeyDown = (e) => (e.keyCode === 13) ? setShowMobileMenu(!showMobileMenu) : null;
 
-  // const closeMobileMenu = () => setClick(false);
-
-  // const changeNav = () => {
-  //   if (window.scrollY >= 80){
-  //     setScroll(true);
-  //   } else{
-  //     setScroll(false);
-  //   }
-  // };
-
   useEffect(() => {
+    const safeDocument = typeof document !== 'undefined' ? document : {};
     // const html = safeDocument.documentElement;
     const { body } = safeDocument;
     if (showMobileMenu) {
       body.style.overflow = 'hidden';
-      body.style.position = 'relative';
     } else {
       body.style.overflow = 'auto';
     }

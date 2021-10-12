@@ -11,7 +11,9 @@ nav.header-nav {
   //   border: 1px solid yellow;
   // }
   background: black;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
   @media screen and (min-width: $desktopWidth) {
     align-items: center;
     bottom: unset;
@@ -115,12 +117,17 @@ nav.header-nav {
     display: flex;
     flex-flow: column;
     left: 0;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     z-index:999;
     ul {
       display: unset;
+    }
+    .header-nav-button {
+      position: relative;
+      left: unset;
+      top: unset;
     }
   }
   &.hide-nav {
