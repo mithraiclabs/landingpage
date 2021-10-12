@@ -1,13 +1,18 @@
 // Color
 
-$linkBlue: #8BEAFF;
+$cyan: #8BEAFF;
+$linkBlue: $cyan;
 $glowBlue: #0347F6;
+$grey: #3c3b46;
+$pink: #cf3f7c;
 
 // Layout
 
 $navHeight: 80px;
 $contentPadding: 55px;
 $contentPaddingMobile: 32px;
+$contentPaddingLight: $contentPadding / 2;
+$contentPaddingLightMobile: $contentPaddingMobile / 2;
 $desktopWidth: 700px;
 $linkGroupMarginMobile: 45px;
 $linkGroupMargin: 65px;
@@ -20,7 +25,7 @@ $fontSize: 16px;
 
 // // Header Mobile
 $fontSizeHeaderMobile: $fontSize * 1.5;
-$lineHeightHeaderMobile: $fontSize * 1.4;
+$lineHeightHeaderMobile: $fontSize * 2;
 $marginHeaderMobile: $fontSize * 1.2;
 
 // // Header Desktop

@@ -19,14 +19,9 @@
   }
   .ib-right-group {}
 }
-
-.index-blockchain .ib-left-group {
-  .iblg-title{}
-}
-
 .index-blockchain .ib-right-group {
   .ibrg-block {
-    background-color:#05044D;
+    background-color: #05044D;
     box-shadow: 4px -4px 0px #DD3E76, -6px 6px 0px #1D4DC9;
     padding: $contentPaddingMobile;
     @media screen and (min-width: $desktopWidth) {
@@ -39,6 +34,4 @@
       }
     }
   }
-  .ibrg-block .ibrgb-title{}
-  .ibrg-block .ibrgb-text{}
 }

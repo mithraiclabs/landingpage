@@ -1,0 +1,41 @@
+@import '../styles.config.scss';
+
+.index-treasury {
+  background-size: cover;
+  margin-bottom: 400px;
+}
+
+.index-treasury {
+  .it-top-group .it-block {
+    box-shadow: 8px 8px 0 $pink;
+    p:first-of-type {
+      margin-bottom: $contentPaddingLightMobile;
+    }
+    p:last-of-type {
+      font-weight: 700;
+    }
+  }
+}
+
+.index-treasury {
+  .it-block {
+    background-color: black;
+    border: 1px solid $grey;
+    box-shadow: 8px 8px 0 $cyan;
+    padding: $contentPaddingLightMobile * 2;
+    &:first-of-type {
+      margin-bottom: $contentPaddingMobile;
+      @media screen and (min-width: $desktopWidth) {
+        margin-bottom: $contentPaddingLight;
+      }
+    }
+  }
+  .it-block {
+    h1 {
+      font-size: $fontSizeHeaderMobile;
+      line-height: $lineHeightHeaderMobile;
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+}

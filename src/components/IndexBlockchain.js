@@ -14,15 +14,15 @@ const BlockchainPage = () => {
       </div>
       <div className="ib-right-group">
         <div className="ibrg-block">
-          <h1 className="ibrgb-title">
+          <h1>
             The options are limitless.
           </h1>
-          <div className="ibrgb-text">
+          <div>
             PsyOptions aims to become one of the foundational DeFi primitives on the Solana blockchain by offering completely trustless American style options for any SPL token.
           </div>
         </div>
         <div className="ibrg-block">
-          <div className="ibrgb-text">
+          <div>
             Providing this clearing house infrastructure to the Solana ecosystem will allow for increased composability between protocols, helping teams align incentives between themselves, their investors, their community members, and more.
           </div>
         </div>
