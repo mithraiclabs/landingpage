@@ -11,13 +11,35 @@
 body {
   background-color: black;
   color: rgba(220, 220, 220);
-  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  font-family: 'Manrope', sans-serif;
+}
+
+.p-button {
+  color: $linkBlue;
+  display: block;
+  border: 2px solid $linkBlue;
+  font-size: $fontSize;
+  margin: 8px;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  &:hover{
+    color: white;
+  }
+  @media screen and (min-width: $desktopWidth) {
+    display: inline-block;
+    padding: 12px 28px;
+  }
+}
+
 .p-content {
-  border: 1px solid yellow;
+  // border: 1px solid yellow;
   margin: 0 auto;
   margin-bottom: $navHeight;
   margin-top: $navHeight * 1.3;
