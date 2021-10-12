@@ -5,7 +5,7 @@
   position: relative;
   .ii-announcement {
     position: relative;
-    z-index: 8888;
+    z-index: 2222;
   }
   .iia-text {
     margin-bottom: $textBlockMarginMobile;
@@ -30,7 +30,7 @@
     right: -80px;
     top: -30px;
     width: 80vw;
-    z-index: 7777;
+    z-index: 1111;
     @media screen and (min-width: $desktopWidth) {
       width: unset;
     }

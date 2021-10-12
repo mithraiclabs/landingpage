@@ -1,32 +1,60 @@
-import React from 'react'
+import "./IndexBlockchain.scss";
+import React from "react";
 import styled from "styled-components"
-import background from "../images/Background.png"
-import cube from "../images/Cube.png"
-const BlockChainPage = () => {
-    return (
-        <Backgroundimg>
-        <img src ={background} alt="background"/>
-        <Lefttext>
-        <img src ={cube} alt="cube"/>
-        <Lefttexttitle>
-        SOLANA BLOCKCHAIN FOUNDATIONS
-        </Lefttexttitle>
-        </Lefttext> 
-        <Righttext>
-        <Righttext1>
-        <Righttext1head>The options are limitless.
-        <Righttext1para>PsyOptions aims to become one of the foundational DeFi primitives on the Solana blockchain by offering completely trustless American style options for any SPL token.</Righttext1para>
-        </Righttext1head>
-        </Righttext1>
-        <Righttext2>
-        <Righttext2para>Providing this clearing house infrastructure to the Solana ecosystem will allow for increased composability between protocols, helping teams align incentives between themselves, their investors, their community members, and more.</Righttext2para>
-        </Righttext2>
-        </Righttext>
-        </Backgroundimg>
-    )
+import background from "../images/Background.png";
+import cube from "../images/Cube.png";
+
+const BlockchainPage = () => {
+  return (
+    <div className="index-blockchain">
+      <div className="ib-left-group">
+        <img src ={cube} alt="Solana Blockchain Foundations cube"/>
+        <h1 className="iblg-title">
+          SOLANA BLOCKCHAIN FOUNDATIONS
+        </h1>
+      </div>
+      <div className="ib-right-group">
+        <div className="ibrg-block">
+          <h1 className="ibrgb-title">
+            The options are limitless.
+          </h1>
+          <div className="ibrgb-text">
+            PsyOptions aims to become one of the foundational DeFi primitives on the Solana blockchain by offering completely trustless American style options for any SPL token.
+          </div>
+        </div>
+        <div className="ibrg-block">
+          <div className="ibrgb-text">
+            Providing this clearing house infrastructure to the Solana ecosystem will allow for increased composability between protocols, helping teams align incentives between themselves, their investors, their community members, and more.
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default BlockChainPage
+//     return (
+//       <Backgroundimg>
+//         <img src ={background} alt="background"/>
+//         <Lefttext>
+//           <img src ={cube} alt="cube"/>
+//           <Lefttexttitle>
+//             SOLANA BLOCKCHAIN FOUNDATIONS
+//           </Lefttexttitle>
+//         </Lefttext> 
+//         <Righttext>
+//           <Righttext1>
+//             <Righttext1head>The options are limitless.
+//               <Righttext1para>PsyOptions aims to become one of the foundational DeFi primitives on the Solana blockchain by offering completely trustless American style options for any SPL token.</Righttext1para>
+//             </Righttext1head>
+//           </Righttext1>
+//           <Righttext2>
+//             <Righttext2para>Providing this clearing house infrastructure to the Solana ecosystem will allow for increased composability between protocols, helping teams align incentives between themselves, their investors, their community members, and more.</Righttext2para>
+//           </Righttext2>
+//         </Righttext>
+//       </Backgroundimg>
+//     )
+// }
+export default BlockchainPage
 
 const Backgroundimg = styled.div`
 background-position:cover;

@@ -18,17 +18,21 @@ $textBlockMarginMobile: 22px;
 
 $fontSize: 16px;
 
+// // Header Mobile
 $fontSizeHeaderMobile: $fontSize * 1.5;
 $lineHeightHeaderMobile: $fontSize * 1.4;
 $marginHeaderMobile: $fontSize * 1.2;
 
+// // Header Desktop
 $fontSizeHeader: $fontSize * 2;
 $lineHeightHeader: $fontSizeHeader * 1.4;
 $marginHeader: $fontSize * 1.2;
 
+// // Super Header Mobile
 $fontSizeSuperMobile: $fontSize * 2.2;
 $lineHeightSuperMobile: $fontSizeSuperMobile * 1.1;
 $marginSuperMobile: $fontSize * 1.8;
 
+// // Super Header Desktop
 $fontSizeSuper: $fontSize * 4;
 $lineHeightSuper: $fontSizeSuper * 1.1;

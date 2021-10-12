@@ -2,7 +2,7 @@
 
 nav.header {
   background: black;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 9999;
@@ -109,10 +109,10 @@ nav.header {
     display: flex;
     flex-flow: column;
     left: 0;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
-    z-index:999;
+    z-index: 9999;
     @media screen and (min-width: $desktopWidth) {
       bottom: unset;
       flex-flow: unset;

@@ -1,0 +1,46 @@
+@import '../styles.config.scss';
+
+.index-blockchain {
+  margin-bottom: 400px;
+  // * {
+  //   border: 1px solid yellow;
+  // }
+}
+
+.index-blockchain {
+  .ib-left-group {
+    display: flex;
+    img {
+      height: 50px;
+      width: 50px;
+    }
+    h1 {
+      font-size: $fontSizeHeaderMobile;
+      padding-left: 22px;
+    }
+  }
+  .ib-right-group {}
+}
+
+.index-blockchain .ib-left-group {
+  .iblg-title{}
+}
+
+.index-blockchain .ib-right-group {
+  .ibrg-block {
+    background-color:#05044D;
+    box-shadow: 4px -4px 0px #DD3E76, -6px 6px 0px #1D4DC9;
+    padding: $contentPaddingMobile;
+    @media screen and (min-width: $desktopWidth) {
+      padding: $contentPaddingMobile;
+    }
+    &:first-of-type {
+      margin-bottom: $contentPaddingMobile;
+      @media screen and (min-width: $desktopWidth) {
+        margin-bottom: $contentPadding;
+      }
+    }
+  }
+  .ibrg-block .ibrgb-title{}
+  .ibrg-block .ibrgb-text{}
+}

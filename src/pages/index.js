@@ -3,7 +3,7 @@ import "./styles.global.scss";
 import * as React from "react";
 import Seo from "../components/seo";
 import IndexIntro from "../components/IndexIntro";
-import IndexBlockChain from "../components/IndexBlockChain";
+import IndexBlockchain from "../components/IndexBlockchain";
 import IndexTreasury from "../components/IndexTreasury";
 import IndexAirdrop from "../components/IndexAirdrop";
 import IndexLaunch from "../components/IndexLaunch";
@@ -16,7 +16,7 @@ const Index = () => (
     <Header />
     <main className="p-content">
       <IndexIntro />
-      <IndexBlockChain />
+      <IndexBlockchain />
       <IndexTreasury />
       <IndexAirdrop />
       <IndexLaunch />
