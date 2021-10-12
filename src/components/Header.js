@@ -4,10 +4,12 @@ import * as React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import companyLogo from "../images/logo.png";
 import {
-  // useEffect,
+  useEffect,
   useState
 } from "react";
 import { IconContext } from "react-icons/lib";
+
+const safeDocument = typeof document !== 'undefined' ? document : {};
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -26,10 +28,16 @@ const Header = () => {
   //   }
   // };
 
-  // useEffect(()=>{
-  //   // changeNav();
-  //   // window.addEventListener("scroll", changeNav);
-  // },[showMobileMenu]);
+  useEffect(() => {
+    // const html = safeDocument.documentElement;
+    const { body } = safeDocument;
+    if (showMobileMenu) {
+      body.style.overflow = 'hidden';
+      body.style.position = 'relative';
+    } else {
+      body.style.overflow = 'auto';
+    }
+  },[showMobileMenu]);
 
   return(
     <div className="header">
