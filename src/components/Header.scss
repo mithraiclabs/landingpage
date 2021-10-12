@@ -1,17 +1,9 @@
 @import '../styles.config.scss';
 
-// mobile first 
-
-$desktopWidth: 700px;
-$fontSize: 25px;
-$navHeight: 80px;
-
-nav.header-nav {
-  // * {
-  //   border: 1px solid yellow;
-  // }
+nav.header {
   background: black;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 9999;
   @media screen and (min-width: $desktopWidth) {
@@ -23,7 +15,7 @@ nav.header-nav {
   }
 }
 
-nav.header-nav {
+nav.header {
   .header-logo {
     height: $navHeight;
     position: relative;
@@ -94,7 +86,7 @@ nav.header-nav {
   }
 }
 
-nav.header-nav {
+nav.header {
   @media screen and (min-width: $desktopWidth) {
     align-items: center;
     bottom: unset;

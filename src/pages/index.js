@@ -14,7 +14,7 @@ const Index = () => (
   <div className="psyoptions psyoptions-index">
     <Seo title="Home" />
     <Header />
-    <main>
+    <main className="p-content">
       <IndexIntro />
       <IndexBlockChain />
       <IndexTreasury />

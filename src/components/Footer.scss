@@ -1,0 +1,44 @@
+@import '../styles.config.scss';
+
+.footer {
+  align-items:center;
+  background-color:transparent;
+  justify-content:center;
+  margin-bottom: $contentPaddingMobile;
+  position : relative;
+  text-align: center;
+  @media screen and (min-width: $desktopWidth) {
+    margin-bottom: $contentPadding;
+  }
+}
+
+.footer {
+  .f-site-links,
+  .f-social-links {
+    li {
+      display: inline;
+    }
+    a {
+      color: $linkBlue;
+      text-decoration: none;
+    }
+  }
+  .f-site-links {
+    margin-bottom: 22px;
+    li {
+      &:not(:last-child):after {
+        content: "|";
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+  .f-social-links {
+    li {
+      margin-left: 20px;
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+}

@@ -27,31 +27,29 @@ const Header = () => {
   },[showMobileMenu]);
 
   return(
-    <div className="header">
-      <IconContext.Provider value={{ color: "#131313"}}>
-        <nav className={`header-nav ${(showMobileMenu)? 'show-nav' : 'hide-nav'}`}>
-          <div className="header-logo">
-            <Link to="/404"><img src={companyLogo} alt="PsyOptions Logo Icon" /></Link>
-          </div>
-          <ul>
-            <li><Link to="/404">Markets</Link></li>
-            <li><Link to="/404">Portfolio</Link></li>
-            <li><Link to="/404">Faucets</Link></li>
-            <li><Link to="/404">Docs</Link></li>
-          </ul>
-          <div className="header-mobile-icon"
-               onClick={handleClick}
-               onKeyDown={handleKeyDown}
-               tabIndex="0"
-               role="button">
-            {showMobileMenu ?<FaTimes/>:<FaBars/>}
-          </div>
-          <div className="header-nav-button">
-            <Link to="/404">Launch App</Link>
-          </div>
-        </nav>
-      </IconContext.Provider >
-    </div>
+    <IconContext.Provider value={{ color: "#131313"}}>
+      <nav className={`header ${(showMobileMenu)? 'show-nav' : 'hide-nav'}`}>
+        <div className="header-logo">
+          <Link to="/404"><img src={companyLogo} alt="PsyOptions Logo Icon" /></Link>
+        </div>
+        <ul>
+          <li><Link to="/404">Markets</Link></li>
+          <li><Link to="/404">Portfolio</Link></li>
+          <li><Link to="/404">Faucets</Link></li>
+          <li><Link to="/404">Docs</Link></li>
+        </ul>
+        <div className="header-mobile-icon"
+             onClick={handleClick}
+             onKeyDown={handleKeyDown}
+             tabIndex="0"
+             role="button">
+          {showMobileMenu ?<FaTimes/>:<FaBars/>}
+        </div>
+        <div className="header-nav-button">
+          <Link to="/404">Launch App</Link>
+        </div>
+      </nav>
+    </IconContext.Provider >
   )
 };
 

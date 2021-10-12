@@ -1,6 +1,7 @@
 @import '../styles.config.scss';
 
 * {
+  // border: 1px solid yellow;
   box-sizing: border-box;
   margin: 0;
   max-width: 100vw;
@@ -9,7 +10,22 @@
 
 body {
   background-color: black;
+  color: rgba(220, 220, 220);
   font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.p-content {
+  border: 1px solid yellow;
+  margin: 0 auto;
+  margin-bottom: $navHeight;
+  margin-top: $navHeight * 1.3;
+  min-height: 350px;
+  padding: $contentPaddingMobile;
+  width: 80vw;
+
+  h1 {
+    margin-bottom: 22px;
+  }
 }
