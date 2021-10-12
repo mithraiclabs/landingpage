@@ -72,7 +72,7 @@ nav.header {
   }
   ul li a {
     color: $linkBlue;
-    font-size: $fontSize;
+    font-size: $fontSize + 3px;
     text-decoration: none;
     &:hover{
       color: white;

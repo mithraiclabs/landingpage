@@ -21,7 +21,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Goldman\:400`,
+          `Goldman\:400,700`,
+          `Manrope\:400,700`
         ],
         display: 'swap'
       }
