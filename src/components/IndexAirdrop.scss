@@ -1,3 +1,21 @@
 @import '../styles.config.scss';
 
-.index-airdrop {}
+.index-airdrop {
+  margin-bottom: 400px;
+
+  .ia-block {
+    margin-bottom: $contentPaddingMobile;
+    h1 {
+      font-size: $fontSizeHeaderMobile;
+      line-height: $lineHeightHeaderMobile;
+      margin-bottom: $contentPaddingLightMobile;
+      text-transform: uppercase;
+    }
+    div {
+      color: $cyan;
+    }
+  }
+  .img {
+    margin-left: -30px;
+  }
+}

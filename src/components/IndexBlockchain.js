@@ -3,7 +3,7 @@ import React from "react";
 import background from "../images/Background.png";
 import cube from "../images/Cube.png";
 
-const BlockchainPage = () => {
+const IndexBlockchain = () => {
   return (
     <div className="index-blockchain" style={{backgroundImage: `url(${background})`}}>
       <div className="ib-left-group">
@@ -31,4 +31,4 @@ const BlockchainPage = () => {
   );
 }
 
-export default BlockchainPage;
+export default IndexBlockchain;

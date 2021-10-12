@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from "gatsby";
 import RetroLogo from "../images/Retro logo2.png";
 
-const Home = () => {
+const IndexIntro = () => {
   return (
     <div className="index-intro">
       <div className="ii-announcement">
@@ -21,4 +21,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default IndexIntro;

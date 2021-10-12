@@ -1,6 +1,5 @@
 import "./IndexTreasury.scss";
 import React from "react";
-import styled from "styled-components";
 import background from "../images/bg.jpg";
 
 const TreasuryPage = () => {

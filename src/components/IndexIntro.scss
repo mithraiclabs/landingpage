@@ -13,13 +13,11 @@
     @media screen and (min-width: $desktopWidth) {
       margin-bottom: $textBlockMargin;
     }
-
     h1.super {
       font-size: $fontSizeSuperMobile;
       line-height: $lineHeightSuperMobile;
       margin-bottom: $marginSuperMobile;
     }
-
     div {
       margin-bottom: $marginSuperMobile * 1.3;
     }

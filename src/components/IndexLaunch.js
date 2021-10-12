@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Gradient from "../images/Gradient.png"
-const LaunchPage = () => {
+
+const IndexLaunch = () => {
     return (
         <Backimg>
             <Img><img src ={Gradient} alt="Gradient"/></Img>
@@ -22,7 +23,7 @@ const LaunchPage = () => {
     )
 }
 
-export default LaunchPage
+export default IndexLaunch;
 
 const Backimg = styled.div`
 
