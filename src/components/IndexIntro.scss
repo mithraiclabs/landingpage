@@ -55,11 +55,14 @@
     top: -60px;
     width: 100vw;
     z-index: 1111;
-    @media screen and (min-width: $desktopWidth) {
+    @media screen and (min-width: 800px) {
       opacity: 0.6;
       right: -12vw;
-      top: -80px;
+      top: -150px;
       width: unset;
+    }
+    @media screen and (min-width: 900px) {
+      top: -80px;
     }
   }
   .iia-button-group .p-button:first-of-type {

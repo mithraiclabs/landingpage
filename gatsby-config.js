@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Project`,
-    description: `Gatsby Project for website.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `PsyOptions`,
+    description: `Home page for PsyOptions`,
+    author: `@psyoptions`,
+    siteUrl: `https://psyoptions.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

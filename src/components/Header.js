@@ -33,15 +33,15 @@ const Header = () => {
           <Link to="/404"><img src={companyLogo} alt="PsyOptions Logo Icon" /></Link>
         </div>
         <ul>
-          <li><Link to="/404">Markets</Link></li>
-          <li><Link to="/404">Portfolio</Link></li>
+          <li><Link to="https://app.psyoptions.io/markets">Markets</Link></li>
+          <li><Link to="https://app.psyoptions.io/portfolio">Portfolio</Link></li>
           <li><Link to="/404">Faucets</Link></li>
-          <li><Link to="/404">Docs</Link></li>
+          <li><Link to="https://docs.psyoptions.io">Docs</Link></li>
         </ul>
         <div className="header-mobile-icon" onClick={handleClick} onKeyDown={handleKeyDown} tabIndex="0" role="button">
           {showMobileMenu ?<FaTimes/>:<FaBars/>}
         </div>
-        <Link to="/404" className="header-nav-button p-button">Launch App</Link>
+        <Link to="https://app.psyoptions.io" className="header-nav-button p-button">Launch App</Link>
       </nav>
     </IconContext.Provider >
   )
