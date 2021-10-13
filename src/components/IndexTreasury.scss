@@ -2,7 +2,7 @@
 
 .index-treasury {
   background-size: cover;
-  margin-bottom: 400px;
+  margin-bottom: $indexSectionMargin;
 }
 
 .index-treasury {
@@ -32,8 +32,8 @@
   }
   .it-block {
     h1 {
-      font-size: $fontSizeHeaderMobile;
-      line-height: $lineHeightHeaderMobile;
+      font-size: $fontSizeHeadingMobile;
+      line-height: $lineHeightHeadingMobile;
       margin: 0;
       text-transform: uppercase;
     }

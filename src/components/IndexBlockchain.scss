@@ -2,7 +2,7 @@
 
 .index-blockchain {
   background-size: cover;
-  margin-bottom: 400px;
+  margin-bottom: $indexSectionMargin;
 }
 
 .index-blockchain {
@@ -13,7 +13,7 @@
       width: 50px;
     }
     h1 {
-      font-size: $fontSizeHeaderMobile;
+      font-size: $fontSizeHeadingMobile;
       padding-left: 22px;
     }
   }

@@ -8,7 +8,6 @@ $pink: #cf3f7c;
 
 // Layout
 
-$navHeight: 80px;
 $contentPadding: 55px;
 $contentPaddingMobile: 32px;
 $contentPaddingLight: $contentPadding / 2;
@@ -16,6 +15,8 @@ $contentPaddingLightMobile: $contentPaddingMobile / 2;
 $desktopWidth: 700px;
 $linkGroupMarginMobile: 45px;
 $linkGroupMargin: 65px;
+$indexSectionMargin: 200px;
+$navHeight: 80px;
 $textBlockMargin: 16px;
 $textBlockMarginMobile: 22px;
 
@@ -24,14 +25,14 @@ $textBlockMarginMobile: 22px;
 $fontSize: 16px;
 
 // // Header Mobile
-$fontSizeHeaderMobile: $fontSize * 1.5;
-$lineHeightHeaderMobile: $fontSize * 2;
-$marginHeaderMobile: $fontSize * 1.2;
+$fontSizeHeadingMobile: $fontSize * 1.5;
+$lineHeightHeadingMobile: $fontSize * 2;
+$marginHeadingMobile: $fontSize * 1.2;
 
 // // Header Desktop
-$fontSizeHeader: $fontSize * 2;
-$lineHeightHeader: $fontSizeHeader * 1.4;
-$marginHeader: $fontSize * 1.2;
+$fontSizeHeading: $fontSize * 2;
+$lineHeightHeading: $fontSizeHeading * 1.4;
+$marginHeading: $fontSize * 1.2;
 
 // // Super Header Mobile
 $fontSizeSuperMobile: $fontSize * 2.2;

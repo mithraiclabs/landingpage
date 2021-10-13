@@ -1,7 +1,7 @@
 @import '../styles.config.scss';
 
 .index-launch-app {
-  margin-bottom: 400px;
+  margin-bottom: $indexSectionMargin;
   position: relative;
   div.ila-content {
     padding-top: 70px;
@@ -9,8 +9,8 @@
     text-align: center;
     z-index: 5555;
     h1 {
-      font-size: $fontSizeHeaderMobile;
-      line-height: $lineHeightHeaderMobile;
+      font-size: $fontSizeHeadingMobile;
+      line-height: $lineHeightHeadingMobile;
       margin-bottom: $contentPaddingLightMobile;
       text-transform: uppercase;
     }

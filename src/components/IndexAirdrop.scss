@@ -1,13 +1,13 @@
 @import '../styles.config.scss';
 
 .index-airdrop {
-  margin-bottom: 400px;
+  margin-bottom: $indexSectionMargin;
 
   .ia-block {
     margin-bottom: $contentPaddingMobile;
     h1 {
-      font-size: $fontSizeHeaderMobile;
-      line-height: $lineHeightHeaderMobile;
+      font-size: $fontSizeHeadingMobile;
+      line-height: $lineHeightHeadingMobile;
       margin-bottom: $contentPaddingLightMobile;
       text-transform: uppercase;
     }
