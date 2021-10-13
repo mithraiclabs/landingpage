@@ -15,7 +15,8 @@ $contentPaddingLightMobile: $contentPaddingMobile / 2;
 $desktopWidth: 700px;
 $linkGroupMarginMobile: 45px;
 $linkGroupMargin: 65px;
-$indexSectionMargin: 200px;
+$indexSectionMargin: 325px;
+$indexSectionMarginMobile: $indexSectionMargin / 2;
 $navHeight: 80px;
 $textBlockMargin: 16px;
 $textBlockMarginMobile: 22px;
@@ -24,21 +25,17 @@ $textBlockMarginMobile: 22px;
 
 $fontSize: 16px;
 
-// // Header Mobile
 $fontSizeHeadingMobile: $fontSize * 1.5;
 $lineHeightHeadingMobile: $fontSize * 2;
 $marginHeadingMobile: $fontSize * 1.2;
 
-// // Header Desktop
 $fontSizeHeading: $fontSize * 2;
 $lineHeightHeading: $fontSizeHeading * 1.4;
 $marginHeading: $fontSize * 1.2;
 
-// // Super Header Mobile
 $fontSizeSuperMobile: $fontSize * 2.2;
 $lineHeightSuperMobile: $fontSizeSuperMobile * 1.1;
 $marginSuperMobile: $fontSize * 1.8;
 
-// // Super Header Desktop
 $fontSizeSuper: $fontSize * 4;
 $lineHeightSuper: $fontSizeSuper * 1.1;

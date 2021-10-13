@@ -5,10 +5,12 @@
   background-color:transparent;
   justify-content:center;
   margin-bottom: $contentPaddingMobile;
+  padding-bottom: $contentPaddingMobile;
   position : relative;
   text-align: center;
   @media screen and (min-width: $desktopWidth) {
     margin-bottom: $contentPadding;
+    padding-bottom: $contentPadding;
   }
 }
 

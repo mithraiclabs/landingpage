@@ -8,7 +8,7 @@ const IndexBlockchain = () => {
     <div className="index-blockchain" style={{backgroundImage: `url(${background})`}}>
       <div className="ib-left-group">
         <img src ={cube} alt="Solana Blockchain Foundations cube"/>
-        <h1 className="iblg-title">
+        <h1>
           SOLANA BLOCKCHAIN FOUNDATIONS
         </h1>
       </div>

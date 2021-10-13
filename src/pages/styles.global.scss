@@ -54,12 +54,10 @@ h1 {
   margin: 0 auto;
   margin-bottom: $navHeight;
   margin-top: $contentPaddingMobile * 1.2;
-  // Switch to flex
   min-height: 280px;
   padding: $contentPaddingMobile;
   @media screen and (min-width: $desktopWidth) {
-    min-height: 350px;
-    width: 70vw;
+    padding: 0;
   }
 
   h1 {

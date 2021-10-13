@@ -2,6 +2,22 @@
 
 .index-airdrop {
   margin-bottom: $indexSectionMargin;
+  @media screen and (min-width: 900px) {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: $indexSectionMargin;
+    width: 80vw;
+  }
+  @media screen and (min-width: 1300px) {
+    width: 65vw;
+  }
+  @media screen and (min-width: 1500px) {
+    width: 60vw;
+  }
+  @media screen and (min-width: 1800px) {}
+  @media screen and (min-width: 2200px) {
+    width: 45vw;
+  }
 
   .ia-block {
     margin-bottom: $contentPaddingMobile;
@@ -15,7 +31,22 @@
       color: $cyan;
     }
   }
-  .img {
+  img {
     margin-left: -30px;
+    width: 150%;
+    @media screen and (min-width: 900px) {
+      margin-top: -60px;
+      width: 50%;
+    }
+    @media screen and (min-width: 1500px) {
+      margin-top: -120px;
+    }
+    @media screen and (min-width: 1500px) {
+      margin-top: -120px;
+    }
+    @media screen and (min-width: 1900px) {
+      margin-top: -130px;
+      width: 45%;
+    }
   }
 }
