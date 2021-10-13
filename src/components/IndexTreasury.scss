@@ -1,3 +1,4 @@
+@use "sass:math";
 @import '../styles.config.scss';
 
 .index-treasury {
@@ -76,11 +77,11 @@
       $gutterSize: 30px;
       .it-block:first-of-type {
         align-self: flex-start;
-        margin-right: $gutterSize / 2;
+        margin-right: math.div($gutterSize, 2);
       }
       .it-block:last-of-type {
         align-self: flex-start;
-        margin-left: $gutterSize / 2;
+        margin-left: math.div($gutterSize, 2);
       }
     }
   }

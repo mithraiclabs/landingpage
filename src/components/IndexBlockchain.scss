@@ -1,3 +1,4 @@
+@use "sass:math";
 @import '../styles.config.scss';
 
 .index-blockchain {
@@ -20,7 +21,7 @@
   }
   .ib-left-group {
     display: flex;
-    margin-bottom: $contentPaddingMobile / 2;
+    margin-bottom: math.div($contentPaddingMobile, 2);
     @media screen and (min-width: 900px) {
       display: block;
       margin-bottom: unset;

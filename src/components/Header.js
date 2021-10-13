@@ -52,7 +52,6 @@ const Header = () => {
         <ul>
           <li><a href="https://app.psyoptions.io/markets">Markets</a></li>
           <li><a href="https://app.psyoptions.io/portfolio">Portfolio</a></li>
-          <li><Link to="/404">Faucets</Link></li>
           <li><a href="https://docs.psyoptions.io">Docs</a></li>
         </ul>
         <div className="header-mobile-icon" onClick={handleClick} onKeyDown={handleKeyDown} tabIndex="0" role="button">

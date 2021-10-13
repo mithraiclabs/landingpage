@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // Color
 
 $cyan: #8BEAFF;
@@ -10,8 +12,8 @@ $pink: #cf3f7c;
 
 $contentPadding: 55px;
 $contentPaddingMobile: 32px;
-$contentPaddingLight: $contentPadding / 2;
-$contentPaddingLightMobile: $contentPaddingMobile / 2;
+$contentPaddingLight: math.div($contentPadding, 2);
+$contentPaddingLightMobile: math.div($contentPaddingMobile, 2);
 $desktopWidth: 900px;
 $linkGroupMarginMobile: 45px;
 $linkGroupMargin: 65px;
