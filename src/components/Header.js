@@ -16,7 +16,6 @@ const Header = () => {
 
   useEffect(() => {
     const safeDocument = typeof document !== 'undefined' ? document : {};
-    // const html = safeDocument.documentElement;
     const { body } = safeDocument;
     if (showMobileMenu) {
       body.style.overflow = 'hidden';

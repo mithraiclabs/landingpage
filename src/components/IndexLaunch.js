@@ -9,7 +9,7 @@ const IndexLaunch = () => {
       <div className="ila-content">
         <h1>HOW PSYOPTIONS CAN HELP YOU</h1>
         <div>Hedge against volatile crypto currencies with options.</div>
-        <Link to="/404" className="p-button">Launch our app</Link>
+        <a href="https://app.psyoptions.io" className="p-button">Launch our app</a>
       </div>
       <div className="ila-background" style={{backgroundImage: `url(${background})`}} />
     </div>
