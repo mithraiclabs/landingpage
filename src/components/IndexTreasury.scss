@@ -4,10 +4,13 @@
   background-size: 100%;
   background-position: 50%;
   padding: 300px 0;
-  margin-bottom: $indexSectionMargin;
+  margin-bottom: 155px;
+  @media screen and (min-width: 600px) {
+    margin-bottom: 175px;
+  }
   @media screen and (min-width: 900px) {
     background-size: 70%;
-    padding: 300px 0;
+    margin-bottom: 285px
   }
 }
 

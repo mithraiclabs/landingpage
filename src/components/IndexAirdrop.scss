@@ -1,11 +1,14 @@
 @import '../styles.config.scss';
 
 .index-airdrop {
-  margin-bottom: $indexSectionMargin;
+  margin-bottom: 225px;
+  @media screen and (min-width: 600px) {
+    margin-bottom: 225px;
+  }
   @media screen and (min-width: 900px) {
     display: flex;
     margin: 0 auto;
-    margin-bottom: $indexSectionMargin;
+    margin-bottom: 305px;
     width: 80vw;
   }
   @media screen and (min-width: 1300px) {

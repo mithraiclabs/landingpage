@@ -2,10 +2,15 @@
 
 .index-blockchain {
   background-size: cover;
-  margin-bottom: $indexSectionMargin;
+  margin-bottom: 175px;
+  padding: 100px 0;
+  @media screen and (min-width: 600px) {
+    margin-bottom: 250px;
+    padding: 150px 0;
+  }
   @media screen and (min-width: 900px) {
-    min-height: 700px;
-    padding-top: 175px;
+    margin-bottom: 310px;
+    padding: 250px 0;
   }
 }
 
@@ -20,7 +25,7 @@
       display: block;
       margin-bottom: unset;
       margin-right: 120px;
-      margin-top: 30px;
+      margin-top: 55px;
       text-align: right;
     }
     @media screen and (min-width: 900px) {
