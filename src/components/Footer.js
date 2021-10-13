@@ -1,6 +1,5 @@
 import "./Footer.scss";
 import React from "react";
-import { Link } from "gatsby";
 import Telegram from "../images/Telegram.png";
 import Twitter from "../images/Twitter.png";
 import Github from "../images/Github.png";
@@ -11,17 +10,17 @@ const Footer = () => {
   return (
     <div className="footer">
       <ul className="f-site-links">
-        <li><Link to="https://app.psyoptions.io">Launch App</Link></li>
-        <li><Link to="https://docs.google.com/forms/d/e/1FAIpQLSdJTqU3eg5dvxNm2KFcQM_zWibdoMKVW3Szjy3V0XOKk4P9jA/viewform">Contact Form</Link></li>
-        <li><Link to="https://docs.psyoptions.io">Docs</Link></li>
-        <li><Link to="https://medium.com/psyoptions">Careers</Link></li>
+        <li><a href="https://app.psyoptions.io">Launch App</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdJTqU3eg5dvxNm2KFcQM_zWibdoMKVW3Szjy3V0XOKk4P9jA/viewform">Contact Form</a></li>
+        <li><a href="https://docs.psyoptions.io">Docs</a></li>
+        <li><a href="https://medium.com/psyoptions">Careers</a></li>
       </ul>
       <ul className="f-social-links">
-        <li><Link to="https://twitter.com/PsyOptions"><img src ={Twitter} alt="Twitter"/></Link></li>
-        <li><Link to="https://github.com/mithraiclabs"><img src ={Github} alt="Github"/></Link></li>
-        <li><Link to="https://t.me/psyoptions"><img src ={Telegram} alt="Telegram"/></Link></li>
-        <li><Link to="https://discord.gg/MgDdJKgZJc"><img src ={Discord} alt="Discord"/></Link></li>
-        <li><Link to="https://medium.com/psyoptions"><img src ={Medium} alt="Medium"/></Link></li>
+        <li><a href="https://twitter.com/PsyOptions"><img src ={Twitter} alt="Twitter"/></a></li>
+        <li><a href="https://github.com/mithraiclabs"><img src ={Github} alt="Github"/></a></li>
+        <li><a href="https://t.me/psyoptions"><img src ={Telegram} alt="Telegram"/></a></li>
+        <li><a href="https://discord.gg/MgDdJKgZJc"><img src ={Discord} alt="Discord"/></a></li>
+        <li><a href="https://medium.com/psyoptions"><img src ={Medium} alt="Medium"/></a></li>
       </ul>
       <div className="f-made-by">made by mithraiclabs</div>
     </div>

@@ -11,7 +11,6 @@ import { IconContext } from "react-icons/lib";
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-
   const handleClick = () => setShowMobileMenu(!showMobileMenu);
   const handleKeyDown = (e) => (e.keyCode === 13) ? setShowMobileMenu(!showMobileMenu) : null;
 
@@ -26,6 +25,18 @@ const Header = () => {
     }
   },[showMobileMenu]);
 
+  let timeoutId;
+  window.addEventListener('resize', () => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      if (showMobileMenu) {
+        if (window.matchMedia('(min-width: 900px)').matches) {
+          setShowMobileMenu(false);
+        }
+      }
+    }, 400);
+  });
+
   return(
     <IconContext.Provider value={{ color: "#fff"}}>
       <nav className={`header ${(showMobileMenu)? 'show-nav' : 'hide-nav'}`}>
@@ -33,15 +44,15 @@ const Header = () => {
           <Link to="/404"><img src={companyLogo} alt="PsyOptions Logo Icon" /></Link>
         </div>
         <ul>
-          <li><Link to="https://app.psyoptions.io/markets">Markets</Link></li>
-          <li><Link to="https://app.psyoptions.io/portfolio">Portfolio</Link></li>
+          <li><a href="https://app.psyoptions.io/markets">Markets</a></li>
+          <li><a href="https://app.psyoptions.io/portfolio">Portfolio</a></li>
           <li><Link to="/404">Faucets</Link></li>
-          <li><Link to="https://docs.psyoptions.io">Docs</Link></li>
+          <li><a href="https://docs.psyoptions.io">Docs</a></li>
         </ul>
         <div className="header-mobile-icon" onClick={handleClick} onKeyDown={handleKeyDown} tabIndex="0" role="button">
           {showMobileMenu ?<FaTimes/>:<FaBars/>}
         </div>
-        <Link to="https://app.psyoptions.io" className="header-nav-button p-button">Launch App</Link>
+        <a href="https://app.psyoptions.io" className="header-nav-button p-button">Launch App</a>
       </nav>
     </IconContext.Provider >
   )

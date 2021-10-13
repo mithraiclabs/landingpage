@@ -2,7 +2,7 @@
 
 nav.header {
   background: black;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
@@ -126,7 +126,7 @@ nav.header {
       left: unset;
       top: unset;
       @media screen and (min-width: $desktopWidth) {
-        padding: 12px 28px;
+        padding: 8px 14px;
       }
     }
   }
