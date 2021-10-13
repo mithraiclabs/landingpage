@@ -25,9 +25,9 @@ const Header = () => {
     }
   },[showMobileMenu]);
 
-  let timeoutId;
-  if (typeof window !== undefined) {
-    window.addEventListener('resize', () => {
+  useEffect(() => {
+    const checkWindowSize = function() {
+      let timeoutId;
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => {
         if (showMobileMenu) {
@@ -36,8 +36,12 @@ const Header = () => {
           }
         }
       }, 400);
-    });
-  }
+    };
+    window.addEventListener('resize', checkWindowSize);
+    return () => {
+      window.removeEventListener('resize', checkWindowSize);
+    }
+  }, [showMobileMenu]);
 
   return(
     <IconContext.Provider value={{ color: "#fff"}}>
