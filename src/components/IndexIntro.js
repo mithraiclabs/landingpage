@@ -12,8 +12,8 @@ const IndexIntro = () => {
           <div>Trade completely trustless American style options for any SPL token.</div>
         </div>
         <div className="iia-button-group">
-          <Link to="/404" className="p-button">Start trading</Link>
-          <Link to="/404" className="p-button">Read our docs</Link>
+          <a href="https://app.psyoptions.io" className="p-button">Start trading</a>
+          <a href="https://docs.psyoptions.io" className="p-button">Read our docs</a>
         </div>
       </div>
       <img className="ii-retro-logo" src={RetroLogo} alt="PsyOptions retro logo with synthwave style"/>
