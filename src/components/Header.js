@@ -26,16 +26,18 @@ const Header = () => {
   },[showMobileMenu]);
 
   let timeoutId;
-  window.addEventListener('resize', () => {
-    clearTimeout(timeoutId);
-    timeoutId = setTimeout(() => {
-      if (showMobileMenu) {
-        if (window.matchMedia('(min-width: 900px)').matches) {
-          setShowMobileMenu(false);
+  if (typeof window !== undefined) {
+    window.addEventListener('resize', () => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        if (showMobileMenu) {
+          if (window.matchMedia('(min-width: 900px)').matches) {
+            setShowMobileMenu(false);
+          }
         }
-      }
-    }, 400);
-  });
+      }, 400);
+    });
+  }
 
   return(
     <IconContext.Provider value={{ color: "#fff"}}>
