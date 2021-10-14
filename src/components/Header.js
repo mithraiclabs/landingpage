@@ -46,7 +46,7 @@ const Header = () => {
     <IconContext.Provider value={{ color: "#fff"}}>
       <nav className={`header ${(showMobileMenu)? 'show-nav' : 'hide-nav'}`}>
         <div className="header-logo">
-          <Link to="/404"><img src={companyLogo} alt="PsyOptions Logo Icon" /></Link>
+          <Link to="/"><img src={companyLogo} alt="PsyOptions Logo Icon" /></Link>
         </div>
         <ul>
           <li><a href="https://app.psyoptions.io/markets">Markets</a></li>
