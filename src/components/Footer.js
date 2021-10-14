@@ -16,11 +16,11 @@ const Footer = () => {
         <li><a href="https://medium.com/psyoptions">Careers</a></li>
       </ul>
       <ul className="f-social-links">
-        <li><a href="https://twitter.com/PsyOptions"><img src ={Twitter} alt="Twitter"/></a></li>
-        <li><a href="https://github.com/mithraiclabs"><img src ={Github} alt="Github"/></a></li>
-        <li><a href="https://t.me/psyoptions"><img src ={Telegram} alt="Telegram"/></a></li>
-        <li><a href="https://discord.gg/MgDdJKgZJc"><img src ={Discord} alt="Discord"/></a></li>
-        <li><a href="https://medium.com/psyoptions"><img src ={Medium} alt="Medium"/></a></li>
+        <li><a href="https://twitter.com/PsyOptions"><img src ={Twitter} alt="Link to PsyOptions' Twitter page"/></a></li>
+        <li><a href="https://github.com/mithraiclabs"><img src ={Github} alt="Link to PsyOptions' Github profile"/></a></li>
+        <li><a href="https://t.me/psyoptions"><img src ={Telegram} alt="Link to Telegram"/></a></li>
+        <li><a href="https://discord.gg/MgDdJKgZJc"><img src ={Discord} alt="Join our Discord"/></a></li>
+        <li><a href="https://medium.com/psyoptions"><img src ={Medium} alt="Read updates from PsyOptions on Medium"/></a></li>
       </ul>
       <div className="f-made-by">made by mithraiclabs</div>
     </div>

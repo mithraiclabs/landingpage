@@ -22,7 +22,7 @@ const Index = () => (
       <IndexLaunch />
     </main>
     <Footer />
- </div>
+  </div>
 );
 
 export default Index;
