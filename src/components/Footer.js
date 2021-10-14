@@ -12,8 +12,8 @@ const Footer = () => {
       <ul className="f-site-links">
         <li><a href="https://app.psyoptions.io">Launch App</a></li>
         <li><a href="https://docs.psyoptions.io">Docs</a></li>
+        <li><a href="https://jobs.solana.com/companies/psyoptions">Careers</a></li>
         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdJTqU3eg5dvxNm2KFcQM_zWibdoMKVW3Szjy3V0XOKk4P9jA/viewform">Contact</a></li>
-        <li><a href="https://medium.com/psyoptions">Careers</a></li>
       </ul>
       <ul className="f-social-links">
         <li><a href="https://twitter.com/PsyOptions"><img src ={Twitter} alt="Link to PsyOptions' Twitter page"/></a></li>
