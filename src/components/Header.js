@@ -29,10 +29,8 @@ const Header = () => {
       let timeoutId;
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => {
-        if (showMobileMenu) {
-          if (window.matchMedia('(min-width: 900px)').matches) {
-            setShowMobileMenu(false);
-          }
+        if (showMobileMenu && window.matchMedia('(min-width: 900px)').matches) {
+          setShowMobileMenu(false);
         }
       }, 400);
     };
