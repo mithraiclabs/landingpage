@@ -1,6 +1,5 @@
 import "./IndexIntro.scss";
 import React from "react";
-import { Link } from "gatsby";
 import RetroLogo from "../images/Retro logo2.png";
 
 const IndexIntro = () => {

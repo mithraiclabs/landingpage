@@ -1,5 +1,4 @@
 import "./IndexLaunch.scss";
-import { Link } from "gatsby";
 import React from "react";
 import background from "../images/Gradient.png";
 
