@@ -1,22 +1,28 @@
-import * as React from "react"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import Home from "../components/Home"
-import BlockChainPage from "../components/BlockChainPage"
-import TreasuryPage from "../components/TreasuryPage"
-import AirdropPage from "../components/AirdropPage"
-import LaunchPage from "../components/LaunchPage"
-import Footer from "../components/Footer"
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <Home />
-    <BlockChainPage />
-    <TreasuryPage />
-    <AirdropPage />
-    <LaunchPage />
-    <Footer />
- </Layout>
-)
+import "./styles.global.scss";
 
-export default IndexPage
+import * as React from "react";
+import Seo from "../components/seo";
+import IndexIntro from "../components/IndexIntro";
+import IndexBlockchain from "../components/IndexBlockchain";
+import IndexTreasury from "../components/IndexTreasury";
+import IndexAirdrop from "../components/IndexAirdrop";
+import IndexLaunch from "../components/IndexLaunch";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+
+const Index = () => (
+  <div className="psyoptions psyoptions-index">
+    <Seo title="Home" />
+    <Header />
+    <main className="p-content">
+      <IndexIntro />
+      <IndexBlockchain />
+      <IndexTreasury />
+      <IndexAirdrop />
+      <IndexLaunch />
+    </main>
+    <Footer />
+  </div>
+);
+
+export default Index;

@@ -1,75 +1,59 @@
-import * as React from "react"
-import { FaBars,FaTimes } from "react-icons/fa"
-import companyLogo from "../images/logo.png"
-import { useEffect,useState } from "react"
-import { IconContext } from "react-icons/lib"
+import "./Header.scss";
+import { Link } from "gatsby";
+import * as React from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import companyLogo from "../images/logo.png";
 import {
-      MobileIcon,
-      Nav,
-      NavbarContainer,
-      NavItem,
-      NavLinks,
-      NavLogo,
-      NavMenu,
-NavBtn
-      
-    } from "./NavbarElements"
+  useEffect,
+  useState
+} from "react";
+import { IconContext } from "react-icons/lib";
 
-    const Header =()=>{
-      const [click,setClick]=useState(false)
-      const [scroll,setScroll]=useState(false)
+const Header = () => {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const handleClick = () => setShowMobileMenu(!showMobileMenu);
+  const handleKeyDown = (e) => (e.keyCode === 13) ? setShowMobileMenu(!showMobileMenu) : null;
 
-      const handleClick = ()=> setClick(!click)
-      const closeMobileMenu = () =>setClick(false)
+  useEffect(() => {
+    const safeDocument = typeof document !== 'undefined' ? document : {};
+    const { body } = safeDocument;
+    body.style.overflow = (showMobileMenu) ? 'hidden' : 'auto';
+  },[showMobileMenu]);
 
-      const changeNav = () =>{
-        if (window.scrollY >=80){
-          setScroll(true)
+  useEffect(() => {
+    const checkWindowSize = function() {
+      let timeoutId;
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        if (showMobileMenu && window.matchMedia('(min-width: 900px)').matches) {
+          setShowMobileMenu(false);
         }
-        else{
-          setScroll(false)
-        }
-      }
-      useEffect(()=>{
-        changeNav()
-        window.addEventListener("scroll",changeNav)
-      },[])
-      return(
-    <>
-        <IconContext.Provider value={{color:"#131313"}}>
-        <Nav active={scroll} click={click}  >
-        
-        <NavbarContainer >
-          <NavLogo to="/" onClick={closeMobileMenu}>
-          <img src ={companyLogo} alt="logo"/> 
-        
-          </NavLogo>
-          <MobileIcon onClick={handleClick}>
-            {click ?<FaTimes/>:<FaBars/>}
-          </MobileIcon>
-          <NavMenu  onClick={handleClick} click={click}>
-
-       
-          <NavItem>
-            <NavLinks to="/">Markets</NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks to="/">Portfolio</NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks to="/">Faucets</NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks to="/">Docs</NavLinks>
-          </NavItem>
-          <NavBtn>
-            Launch app
-          </NavBtn>
-          </NavMenu>
-        </NavbarContainer>
-        </Nav>
-        </IconContext.Provider >
-       </>
-      )
+      }, 400);
+    };
+    window.addEventListener('resize', checkWindowSize);
+    return () => {
+      window.removeEventListener('resize', checkWindowSize);
     }
-    export default Header
+  }, [showMobileMenu]);
+
+  return(
+    <IconContext.Provider value={{ color: "#fff"}}>
+      <nav className={`header ${(showMobileMenu) ? 'show-nav' : 'hide-nav'}`}>
+        <div className="header-logo">
+          <Link to="/"><img src={companyLogo} alt="PsyOptions Logo Icon" /></Link>
+        </div>
+        <ul>
+          <li><a href="https://app.psyoptions.io/markets">Markets</a></li>
+          <li><a href="https://app.psyoptions.io/portfolio">Portfolio</a></li>
+          <li><a href="https://docs.psyoptions.io">Docs</a></li>
+        </ul>
+        <div className="header-mobile-icon" onClick={handleClick} onKeyDown={handleKeyDown} tabIndex="0" role="button">
+          {showMobileMenu ? <FaTimes/> : <FaBars/>}
+        </div>
+        <a href="https://app.psyoptions.io" className="header-nav-button p-button">Launch App</a>
+      </nav>
+    </IconContext.Provider >
+  )
+};
+
+export default Header;

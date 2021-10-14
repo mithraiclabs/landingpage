@@ -1,0 +1,159 @@
+@import '../styles.config.scss';
+
+nav.header {
+  background: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  @media screen and (min-width: $desktopWidth) {
+    align-items: center;
+    bottom: unset;
+    display: flex;
+    flex-flow: unset;
+    justify-content: space-between;
+  }
+}
+
+nav.header {
+  .header-logo {
+    height: $navHeight;
+    position: relative;
+    width: $navHeight;
+    a {
+      bottom: 0;
+      left: 25px;
+      position: absolute;
+      right: 0;
+      top: 15px;
+
+      @media screen and (min-width: $desktopWidth) {
+        left: 35px;
+      }
+    }
+  }
+  ul {
+    flex: 2;
+    text-align: center;
+    @media screen and (min-width: $desktopWidth) {
+      flex: 1 1 auto;
+    }
+  }
+  ul li {
+    margin-top: calc(100vh / 12);
+
+    @media screen and (min-height: 350px){
+      margin-top: calc((100vh) / 25);
+    }
+
+    @media screen and (min-height: 400px){
+      margin-top: calc((100vh) / 19);
+    }
+
+    @media screen and (min-height: 525px){
+      margin-top: calc((100vh) / 14);
+    }
+
+    @media screen and (min-height: 670px){
+      margin-top: calc((100vh) / 9);
+    }
+
+    @media screen and (min-height: 880px){
+      margin-top: calc((100vh) / 8);
+    }
+    @media screen and (min-width: $desktopWidth) {
+      margin: 0;
+      display: inline-block;
+      margin-left: 3vw;
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+  ul li a {
+    color: $linkBlue;
+    font-size: $fontSize + 3px;
+    text-decoration: none;
+    &:hover{
+      color: white;
+    }
+  }
+  .header-mobile-icon {
+    cursor: pointer;
+    font-size: 35px;
+    position: absolute;
+    right: 25px;
+    top: 18px;
+    @media screen and (min-width: $desktopWidth) {
+      display: none;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+nav.header {
+  @media screen and (min-width: $desktopWidth) {
+    align-items: center;
+    bottom: unset;
+    flex-flow: unset;
+    justify-content: space-between;
+  }
+  .header-nav-button {
+    margin: 8px;
+    @media screen and (min-width: $desktopWidth) {
+      display: inline-block;
+      padding: 8px 14px;
+    }
+  }
+  &.show-nav {
+    bottom: 0;
+    display: flex;
+    flex-flow: column;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    @media screen and (min-width: $desktopWidth) {
+      bottom: unset;
+      flex-flow: unset;
+    }
+    ul {
+      display: unset;
+    }
+    .header-nav-button {
+      padding: 28px 0;
+      position: relative;
+      left: unset;
+      top: unset;
+      @media screen and (min-width: $desktopWidth) {
+        padding: 8px 14px;
+      }
+    }
+  }
+  &.hide-nav {
+    ul {
+      display: none;
+      @media screen and (min-width: $desktopWidth) {
+        display: block;
+      }
+    }
+    .header-nav-button {
+      display: none;
+      @media screen and (min-width: 350px){
+        display: block;
+        position: absolute;
+        left: 85px;
+        top: 10px;
+      }
+      @media screen and (min-width: $desktopWidth) {
+        position: relative;
+        left: unset;
+        right: 20px;
+        top: unset;
+      }
+    }
+  }
+}

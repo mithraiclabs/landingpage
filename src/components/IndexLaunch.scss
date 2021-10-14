@@ -1,0 +1,83 @@
+@import '../styles.config.scss';
+
+.index-launch-app {
+  margin-bottom: 90px;
+  padding: 40px 0;
+  position: relative;
+  @media screen and (min-width: 540px) {
+    padding: 150px 0;
+  }
+  @media screen and (min-width: 1100px) {
+    padding: 100px 0;
+  }
+  @media screen and (min-width: 1500px) {
+    padding: 140px 0;
+  }
+  div.ila-content {
+    margin: 0 auto;
+    padding-bottom: 45px;
+    // padding-top: 50px;
+    position: relative;
+    text-align: center;
+    z-index: 5555;
+    @media screen and (min-width: 400px) {
+      padding-bottom: 100px;
+      padding-top: 70px;
+      width: 70vw;
+    }
+    @media screen and (min-width: 700px) {
+      padding: 70px 0;
+      width: 55vw;
+    }
+    @media screen and (min-width: 900px) {
+      padding: 50px 0;
+      width: 45vw;
+    }
+    h1 {
+      font-size: $fontSizeHeadingMobile;
+      line-height: $lineHeightHeadingMobile;
+      margin-bottom: $contentPaddingLightMobile;
+      text-transform: uppercase;
+    }
+    div {
+      color: $cyan;
+      margin-bottom: $contentPaddingMobile;
+    }
+    a {
+      background: $cyan;
+      color: black;
+      font-weight: 700;
+    }
+  }
+  div.ila-background {
+    background-size: 90%;
+    background-repeat: no-repeat;
+    left: 0;
+    height: 90%;
+    margin-left: 17px;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+    @media screen and (min-width: 400px) {
+      background-size: 69%;
+      background-position: 38%;
+    }
+    @media screen and (min-width: 700px) {
+      background-size: 50%;
+      background-position: 45%;
+    }
+    @media screen and (min-width: 900px) {
+      background-size: 30%;
+      background-position: 48%;
+    }
+    @media screen and (min-width: 1000px) {
+      background-size: 375px;
+      background-position: center;
+    }
+    @media screen and (min-width: 1100px) {
+      background-size: 375px;
+    }
+  }
+}
