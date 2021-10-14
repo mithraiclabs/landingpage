@@ -4,12 +4,10 @@
   align-items:center;
   background-color:transparent;
   justify-content:center;
-  margin-bottom: $contentPaddingMobile;
   padding-bottom: $contentPaddingMobile;
   position : relative;
   text-align: center;
   @media screen and (min-width: $desktopWidth) {
-    margin-bottom: $contentPadding;
     padding-bottom: $contentPadding;
   }
 }
@@ -17,8 +15,7 @@
 .footer {
   $linkSpacing: 20px;
   .f-site-links,
-  .f-social-links,
-  .f-made-by {
+  .f-social-links {
     margin-bottom: $linkGroupMarginMobile;
     @media screen and (min-width: $desktopWidth) {
       margin-bottom: $linkGroupMargin;
@@ -33,10 +30,22 @@
   }
   .f-site-links {
     li {
-      &:not(:last-child):after {
-        content: "|";
-        padding-left: $linkSpacing;
-        padding-right: $linkSpacing;
+      display: block;
+      margin-bottom: 35px;
+      &:last-child {
+        margin-bottom: 75px;
+      }
+      @media screen and (min-width: 600px) {
+        display: inline-block;
+        margin-bottom: 0;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:not(:last-child):after {
+          content: "|";
+          padding-left: $linkSpacing;
+          padding-right: $linkSpacing;
+        }
       }
     }
   }
