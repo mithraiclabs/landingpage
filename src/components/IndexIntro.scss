@@ -2,7 +2,7 @@
 
 .index-intro {
   margin-bottom: 192px;
-  margin-top: 10px;
+  margin-top: 80px;
   position: relative;
   @media screen and (min-width: 600px) {
     margin: 0 auto;
@@ -69,6 +69,6 @@
     background: $cyan;
     color: black;
     font-weight: 700;
-    margin-bottom: $marginSuperMobile;
+    margin-bottom: 30px;
   }
 }
