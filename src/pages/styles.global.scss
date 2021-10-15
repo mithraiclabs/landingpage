@@ -64,6 +64,7 @@ h1 {
   margin-top: $contentPaddingMobile * 1.2;
   min-height: 280px;
   padding: $contentPaddingMobile;
+  position: relative;
   @media screen and (min-width: $desktopWidth) {
     padding: 0;
   }
@@ -72,6 +73,22 @@ h1 {
     margin-bottom: $marginHeadingMobile;
     @media screen and (min-width: $desktopWidth) {
       margin-bottom: $marginHeading;
+    }
+  }
+
+  .p-button.anchor-navigation {
+    background-color: black;
+    color: $cyan;
+    cursor: pointer;
+    bottom: 12px;
+    right: 12px;
+    line-height: 12px;
+    padding: 5px 8px;
+    position: fixed;
+    z-index: 9999;
+    svg {
+      font-size: 12px;
+      margin-right: 3px;
     }
   }
 }
