@@ -121,7 +121,7 @@ h1 {
 
   .p-button {
     background-color: black;
-    border: 2px solid $pink;
+    border: 2px solid $cyan;
     border-bottom: 0;
     border-radius: 4px 0 4px 0;
     box-shadow: 0 0 5px 1px $pink;
@@ -137,7 +137,7 @@ h1 {
       margin-right: 3px;
     }
     @media screen and (min-height: 600px) {
-      border: 2px solid $pink;
+      border: 2px solid $cyan;
       border-radius: 4px;
     }
     @media screen and (min-width: 900px) {
