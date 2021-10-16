@@ -45,6 +45,16 @@
       margin-bottom: $marginSuperMobile;
       @media screen and (max-height: 600px) {
         font-size: math.div($fontSizeSuperMobile, 1.1);
+        margin-bottom: math.div($marginSuperMobile, 2.2);
+      }
+      @media screen and (min-height: 700px) {
+        font-size: $fontSizeSuperMobile * 1.2;
+        line-height: $lineHeightSuperMobile * 1.4;
+        margin-bottom: math.div($marginSuperMobile, 2);
+      }
+      @media screen and (min-height: 700px) {
+        font-size: $fontSizeSuperMobile * 1.2;
+        line-height: $lineHeightSuperMobile * 1.4;
         margin-bottom: math.div($marginSuperMobile, 2);
       }
       @media screen and (min-width: 900px) {

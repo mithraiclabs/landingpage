@@ -16,7 +16,7 @@ const Index = () => {
   const [lastInView, updateLastInView] = useState(0);
 
   const observerOptions = {
-    threshold: 0.5
+    threshold: 0.2
   };
   const [introRef, introInView, introEntry] = useInView(observerOptions);
   const [blockchainRef, blockchainInView, blockchainEntry] = useInView(observerOptions);
@@ -68,12 +68,6 @@ const Index = () => {
       <Seo title="Home" />
       <Header />
       <main className="p-content">
-          <div className="p-button anchor-navigation" onClick={handleClick} onKeyDown={handleKeyDown} role="button" tabIndex="0">
-            {
-              (lastInView === list.length - 1) ? (<><FaArrowCircleUp /> {list[0][0]}</>)
-                                               : (<><FaArrowCircleDown /> {list[lastInView + 1][0]}</>)
-            }
-          </div>
         <div ref={introRef}>
           <IndexIntro />
         </div>
@@ -91,6 +85,14 @@ const Index = () => {
         </div>
       </main>
       <Footer />
+        <div className="anchor-navigation">
+          <div className="p-button" onClick={handleClick} onKeyDown={handleKeyDown} role="button" tabIndex="0">
+            {
+              (lastInView === list.length - 1) ? (<><FaArrowCircleUp /> {list[0][0]}</>)
+                                               : (<><FaArrowCircleDown /> {list[lastInView + 1][0]}</>)
+            }
+          </div>
+        </div>
     </div>
   );
 };

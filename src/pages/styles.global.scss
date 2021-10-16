@@ -43,6 +43,7 @@ h1 {
   display: block;
   border: 2px solid $linkBlue;
   border-radius: 4px;
+  box-shadow: 0 0 2px 1px $cyan;
   font-size: $fontSize;
   margin: 8px;
   padding: 8px 14px;
@@ -75,20 +76,84 @@ h1 {
       margin-bottom: $marginHeading;
     }
   }
+}
 
-  .p-button.anchor-navigation {
+.anchor-navigation {
+  // border: 1px dotted grey;
+  bottom: 0;
+  bottom: -2px;
+  left: 12vw;
+  position: fixed;
+  right: 12vw;
+  text-align: center;
+  z-index: 9999;
+  @media screen and (max-width: 670px) {
+    left: 15vw;
+    right: 15vw;
+  }
+  @media screen and (min-height: 660px) {
+    bottom: 28px;
+  }
+  @media screen and (min-height: 725px) and (min-width: 400px) {
+    left: 20vw;
+    right: 20vw;
+  }
+  @media screen and (min-width: 700px) {
+    left: 30vw;
+    right: 30vw;
+  }
+  @media screen and (min-width: 900px) {
+    left: 35vw;
+    right: 35vw;
+  }
+  @media screen and (min-width: 1300px) {
+    left: 40vw;
+    right: 40vw;
+  }
+  @media screen and (min-width: 1900px) {
+    left: 42vw;
+    right: 42vw;
+  }
+  @media screen and (min-width: 2700px) {
+    left: 44vw;
+    right: 44vw;
+  }
+
+  .p-button {
     background-color: black;
+    border: 2px solid $pink;
+    border-bottom: 0;
+    border-radius: 4px 0 4px 0;
+    box-shadow: 0 0 5px 1px $pink;
     color: $cyan;
     cursor: pointer;
-    bottom: 12px;
-    right: 12px;
+    display: inline-block;
     line-height: 12px;
-    padding: 5px 8px;
-    position: fixed;
+    margin: 0;
+    padding: 7px 10px;
     z-index: 9999;
     svg {
       font-size: 12px;
       margin-right: 3px;
+    }
+    @media screen and (min-height: 600px) {
+      border: 2px solid $pink;
+      border-radius: 4px;
+    }
+    @media screen and (min-width: 900px) {
+      font-size: 18px;
+      line-height: 18px;
+      padding: 14px 22px;
+      // padding-bottom: 12px;
+      svg {
+        font-size: 17px;
+        margin-right: 6px;
+        margin-top: -3px;
+        vertical-align: middle;
+      }
+    }
+    &:focus {
+      outline: none;
     }
   }
 }

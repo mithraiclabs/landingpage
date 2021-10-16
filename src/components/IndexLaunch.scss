@@ -19,7 +19,7 @@
     // padding-top: 50px;
     position: relative;
     text-align: center;
-    z-index: 5555;
+    z-index: 100;
     @media screen and (min-width: 400px) {
       padding-bottom: 100px;
       padding-top: 70px;
@@ -59,7 +59,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 1111;
+    z-index: 50;
     @media screen and (min-width: 400px) {
       background-size: 69%;
       background-position: 38%;
