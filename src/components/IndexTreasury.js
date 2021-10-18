@@ -16,14 +16,10 @@ const TreasuryPage = () => {
       </div>
       <div className="it-bottom-group">
         <div className="it-block">
-          <h1 className="ibrgb-title">
-            Greater decentralize your token holders as speculators or other participants exercise option contracts.
-          </h1>
+          Greater decentralize your token holders as speculators or other participants exercise option contracts.
         </div>
         <div className="it-block">
-          <h1 className="ibrgb-title">
-            Generating residual funding through premiums collected and exercises made
-          </h1>
+          Generating residual funding through premiums collected and exercises made
         </div>
       </div>
     </div>

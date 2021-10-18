@@ -18,6 +18,12 @@
 .index-treasury {
   .it-top-group .it-block {
     box-shadow: 8px 8px 0 $pink;
+    h1 {
+      margin-bottom: $contentPaddingLightMobile;
+    }
+    p {
+      font-size: 18px;
+    }
     p:first-of-type {
       margin-bottom: $contentPaddingLightMobile;
     }
@@ -72,6 +78,9 @@
     }
   }
   .it-bottom-group {
+    .it-block {
+      font-size: 18px;
+    }
     @media screen and (min-width: 900px) {
       display: flex;
       $gutterSize: 30px;

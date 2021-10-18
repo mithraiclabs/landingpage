@@ -7,7 +7,7 @@ const IndexIntro = () => {
     <div className="index-intro">
       <div className="ii-announcement">
         <div className="iia-text">
-          <h1 className="super">AMERICAN STYLE OPTIONS, ANYTIME, ANYWHERE</h1>
+          <h1 className="super">AMERICAN STYLE OPTIONS, BUILT ON SOLANA</h1>
           <div>Trade completely trustless American style options for any SPL token.</div>
         </div>
         <div className="iia-button-group">
