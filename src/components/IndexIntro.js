@@ -11,7 +11,7 @@ const IndexIntro = () => {
           <div>Trade completely trustless American style options for any SPL token.</div>
         </div>
         <div className="iia-button-group">
-          <a href="https://app.psyoptions.io" className="p-button">Start trading</a>
+          <a href="https://trade.psyoptions.io" className="p-button">Start trading</a>
           <a href="https://docs.psyoptions.io" className="p-button">Read our docs</a>
         </div>
       </div>
