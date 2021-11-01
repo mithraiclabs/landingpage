@@ -43,8 +43,8 @@ const Header = () => {
           <Link to="/"><img src={companyLogo} alt="PsyOptions Logo Icon" /></Link>
         </div>
         <ul>
-          <li><a href="https://trade.psyoptions.io/markets">Markets</a></li>
-          <li><a href="https://trade.psyoptions.io/portfolio">Portfolio</a></li>
+          <li><a href="https://trade.psyoptions.io/#/markets">Markets</a></li>
+          <li><a href="https://trade.psyoptions.io/#/portfolio">Portfolio</a></li>
           <li><a href="https://docs.psyoptions.io">Docs</a></li>
         </ul>
         <div className="header-mobile-icon" onClick={handleClick} onKeyDown={handleKeyDown} tabIndex="0" role="button">
