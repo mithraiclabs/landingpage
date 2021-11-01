@@ -1,4 +1,4 @@
-import "./IndexIntro.scss";
+import "../styles/IndexIntro.scss";
 import React from "react";
 import RetroLogo from "../images/Retro logo2.png";
 import SolanaLogo from "../images/solana-logo-icon.svg";
@@ -9,12 +9,15 @@ const IndexIntro = () => {
     <div className="index-intro">
       <div className="ii-announcement">
         <div className="iia-text">
-          <h1 className="super">AMERICAN STYLE OPTIONS, BUILT ON SOLANA</h1>
-          <div>Trade completely trustless American style options for any SPL token.</div>
+          <h1>COMPLETELY TRUSTLESS AMERICAN STYLE OPTIONS</h1>
+          <h2>European style options soon to follow</h2>
         </div>
         <div className="iia-button-group">
           <a href="https://trade.psyoptions.io" className="p-button">Start trading</a>
           <a href="https://docs.psyoptions.io" className="p-button">Read our docs</a>
+        </div>
+        <div className="iia-first">
+          A first for blockchain. Winner of the <a href="https://solana.com/news/winners-of-the-solana-x-serum-defi-hackathon">Solana X Serum DeFi Hackathon</a>
         </div>
         <figure className="iia-built-on">
           <span>Built with</span>&nbsp;
