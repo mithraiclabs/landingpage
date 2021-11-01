@@ -30,12 +30,12 @@ h1 {
 }
 
 .psyoptions {
-  bottom: 0;
-  left: 0;
-  overflow-x: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
+  // bottom: 0;
+  // left: 0;
+  // overflow-x: hidden;
+  // position: absolute;
+  // right: 0;
+  // top: 0;
 }
 
 .p-button {
@@ -59,7 +59,12 @@ h1 {
 }
 
 .p-content {
+  bottom: 0;
   font-family: 'Manrope', sans-serif;
+  // left: 0;
+  // position: absolute;
+  // right: 0;
+  // top: 150px;
   margin: 0 auto;
   margin-bottom: $navHeight;
   margin-top: $contentPaddingMobile * 1.2;
