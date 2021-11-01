@@ -1,4 +1,4 @@
-  import "./IndexIntro.scss";
+import "./IndexIntro.scss";
 import React from "react";
 import RetroLogo from "../images/Retro logo2.png";
 import SolanaLogo from "../images/solana-logo-icon.svg";
