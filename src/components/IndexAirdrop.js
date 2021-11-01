@@ -1,4 +1,4 @@
-import "./IndexAirdrop.scss";
+import "../styles/IndexAirdrop.scss";
 import React from "react";
 import Joystick from "../images/Joystick.png"
 

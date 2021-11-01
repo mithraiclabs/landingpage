@@ -1,4 +1,4 @@
-import "./styles.global.scss";
+import "../styles/styles.global.scss";
 
 import React, { useEffect, useState } from "react";
 import { useInView } from 'react-intersection-observer';
