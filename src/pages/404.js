@@ -1,4 +1,4 @@
-import "./styles.global.scss";
+import "../styles/styles.global.scss";
 import * as React from "react";
 import Seo from "../components/seo";
 import Footer from "../components/Footer";

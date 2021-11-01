@@ -1,4 +1,4 @@
-import "./IndexLaunch.scss";
+import "../styles/IndexLaunch.scss";
 import React from "react";
 import background from "../images/Gradient.png";
 
