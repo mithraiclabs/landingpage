@@ -62,7 +62,9 @@
         line-height: $lineHeightSuperMobile + 18;
       }
     }
-    // h2 {}
+    h2 {
+      font-weight: 400;
+    }
     div {
       margin-bottom: $marginSuperMobile;
       @media screen and (max-height: 600px) {
