@@ -12,7 +12,7 @@ import LogoI6 from "../images/mgnr.jpg";
 import LogoI7 from "../images/solar-eco-fund.jpg";
 import LogoI8 from "../images/ledger-prime.png";
 import LogoI9 from "../images/one-block.jpg";
-import LogoI10 from "../images/airspeed18.jpg";
+import LogoI10 from "../images/airspeed18.png";
 
 const Relationships = () => {
   return (
@@ -37,6 +37,7 @@ const Relationships = () => {
         <img src={LogoI8} alt="PsyOptions Investor"/>
         <img src={LogoI9} alt="PsyOptions Investor"/>
         <img src={LogoI1} alt="PsyOptions Investor"/>
+        <img src={LogoI10} alt="PsyOptions Investor"/>
       </div>
     </div>
   );
