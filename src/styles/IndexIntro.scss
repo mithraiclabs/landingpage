@@ -63,6 +63,8 @@
       }
     }
     h2 {
+      // Temporary as we iterate on content
+      display: none;
       font-weight: 400;
     }
     div {
@@ -73,13 +75,15 @@
     }
   }
   .iia-first {
+    // Temporary as we iterate on content
+    display: none;
     margin-bottom: $textBlockMarginMobile;
     a {
       color: $linkBlue;
       text-decoration: none;
     }
   }
-  .iia-built-on {
+  .iia-built-with {
     align-content: center;
     display: flex;
     img:first-of-type {
@@ -91,6 +95,9 @@
       height: 28px;
       margin-left: 8px;
       margin-top: -3px;
+    }
+    span:last-of-type {
+      margin-left: 12px;
     }
   }
   .iia-button-group {
