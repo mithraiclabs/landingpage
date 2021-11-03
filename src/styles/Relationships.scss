@@ -17,16 +17,23 @@
   @media screen and (min-width: 2200px) {
     width: 35vw;
   }
+  h1 {
+    margin-bottom: 38px;
+  }
   .r-grid {
     align-items: center;
     @media screen and (min-width: 600px) {
       display: grid;
-      grid-gap: 10px 10px;
+      grid-gap: 35px 15px;
       grid-template-columns: 33% repeat(2, 1fr);
       grid-template-rows: auto;
+      div > div {
+        padding: 15px 0;
+        text-align: center;
+      }
     }
     &:first-of-type {
-      margin-bottom: $contentPadding;
+      margin-bottom: 76px;
     }
     img {
       vertical-align: center;
