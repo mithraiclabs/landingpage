@@ -1,4 +1,4 @@
-import "./Footer.scss";
+import "../styles/Footer.scss";
 import React from "react";
 import Telegram from "../images/Telegram.png";
 import Twitter from "../images/Twitter.png";

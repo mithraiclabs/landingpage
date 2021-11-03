@@ -1,4 +1,4 @@
-import "./IndexTreasury.scss";
+import "../styles/IndexTreasury.scss";
 import React from "react";
 import background from "../images/bg.jpg";
 

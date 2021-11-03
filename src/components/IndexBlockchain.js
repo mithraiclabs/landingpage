@@ -1,4 +1,4 @@
-import "./IndexBlockchain.scss";
+import "../styles/IndexBlockchain.scss";
 import React from "react";
 import background from "../images/Background.png";
 import cube from "../images/Cube.png";

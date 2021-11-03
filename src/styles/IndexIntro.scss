@@ -1,5 +1,5 @@
 @use "sass:math";
-@import '../styles.config.scss';
+@import './styles.config.scss';
 
 .index-intro {
   margin-bottom: 192px;
@@ -39,7 +39,7 @@
     @media screen and (min-width: $desktopWidth) {
       margin-bottom: $textBlockMargin;
     }
-    h1.super {
+    h1 {
       font-size: $fontSizeSuperMobile;
       line-height: $lineHeightSuperMobile;
       margin-bottom: $marginSuperMobile;
@@ -62,6 +62,11 @@
         line-height: $lineHeightSuperMobile + 18;
       }
     }
+    h2 {
+      // Temporary as we iterate on content
+      display: none;
+      font-weight: 400;
+    }
     div {
       margin-bottom: $marginSuperMobile;
       @media screen and (max-height: 600px) {
@@ -69,7 +74,16 @@
       }
     }
   }
-  .iia-built-on {
+  .iia-first {
+    // Temporary as we iterate on content
+    display: none;
+    margin-bottom: $textBlockMarginMobile;
+    a {
+      color: $linkBlue;
+      text-decoration: none;
+    }
+  }
+  .iia-built-with {
     align-content: center;
     display: flex;
     img:first-of-type {
@@ -81,6 +95,9 @@
       height: 28px;
       margin-left: 8px;
       margin-top: -3px;
+    }
+    span:last-of-type {
+      margin-left: 12px;
     }
   }
   .iia-button-group {

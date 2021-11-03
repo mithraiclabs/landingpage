@@ -1,4 +1,4 @@
-import "./Header.scss";
+import "../styles/Header.scss";
 import { Link } from "gatsby";
 import * as React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
