@@ -19,11 +19,12 @@ const IndexIntro = () => {
         <div className="iia-first">
           A first for blockchain. Winner of the <a href="https://solana.com/news/winners-of-the-solana-x-serum-defi-hackathon">Solana X Serum DeFi Hackathon</a>
         </div>
-        <figure className="iia-built-on">
-          <span>Built with</span>&nbsp;
+        <figure className="iia-built-with">
+          <span>Built with Solana</span>&nbsp;
           <a href="https://solana.com/">
             <img src={SolanaLogo} alt="built on Solana" />
           </a>
+          <span>and Serum</span>
           <a href="https://projectserum.com/">
             <img src={SerumLogo} alt="built on Serum" />
           </a>

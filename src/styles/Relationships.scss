@@ -1,0 +1,36 @@
+@import './styles.config.scss';
+
+.relationships {
+  margin: 0 auto;
+  margin-bottom: 192px;
+  position: relative;
+  width: 90vw;
+  @media screen and (min-width: 600px) {
+    width: 70vw;
+  }
+  @media screen and (min-width: 1500px) {
+    width: 55vw;
+  }
+  @media screen and (min-width: 1800px) {
+    width: 45vw;
+  }
+  @media screen and (min-width: 2200px) {
+    width: 35vw;
+  }
+  .r-grid {
+    align-items: center;
+    @media screen and (min-width: 600px) {
+      display: grid;
+      grid-gap: 10px 10px;
+      grid-template-columns: 33% repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
+    &:first-of-type {
+      margin-bottom: $contentPadding;
+    }
+    img {
+      vertical-align: center;
+      width: 100%;
+    }
+  }
+}
