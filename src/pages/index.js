@@ -10,6 +10,7 @@ import IndexAirdrop from "../components/IndexAirdrop";
 import IndexLaunch from "../components/IndexLaunch";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Relationships from "../components/Relationships";
 import { FaArrowCircleDown, FaArrowCircleUp } from "react-icons/fa";
 
 const Index = () => {
@@ -22,6 +23,7 @@ const Index = () => {
   const [blockchainRef, blockchainInView, blockchainEntry] = useInView(observerOptions);
   const [treasuryRef, treasuryInView, treasuryEntry] = useInView(observerOptions);
   const [airdropRef, airdropInView, airdropEntry] = useInView(observerOptions);
+  const [relationshipsRef, relationshipsInView, relationshipsEntry] = useInView(observerOptions);
   const [launchRef, launchInView, launchEntry] = useInView(observerOptions);
 
   const list = [
@@ -29,6 +31,7 @@ const Index = () => {
     ['Solana Blockchain', blockchainRef, blockchainEntry],
     ['Treasury Management', treasuryRef, treasuryEntry],
     ['Options Airdrop', airdropRef, airdropEntry],
+    ['Relationsips', relationshipsRef, relationshipsEntry],
     ['Launch App', launchRef, launchEntry]
   ];
 
@@ -46,13 +49,24 @@ const Index = () => {
     if (airdropInView) {
       inView = 3;
     }
-    if (launchInView) {
+    if (relationshipsInView) {
       inView = 4;
+    }
+    if (launchInView) {
+      inView = 5;
     }
     if (typeof(inView) === 'number') {
       updateLastInView(inView);
     }
-  }, [introInView, blockchainInView, treasuryInView, airdropInView, launchInView]);
+  },
+  [
+    introInView,
+    blockchainInView,
+    treasuryInView,
+    airdropInView,
+    relationshipsInView,
+    launchInView
+  ]);
 
   const scrollToElement = function() {
     const scrollOptions = { behavior: 'smooth', block: 'center', inline: 'nearest'};
@@ -79,6 +93,9 @@ const Index = () => {
         </div>
         <div ref={airdropRef}>
           <IndexAirdrop />
+        </div>
+        <div ref={relationshipsRef}>
+          <Relationships />
         </div>
         <div ref={launchRef}>
           <IndexLaunch />
