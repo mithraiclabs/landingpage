@@ -41,8 +41,8 @@ const Relationships = () => {
           <div>Alameda Research</div>
         </div>
         <div>
-          <img src={LogoI2} alt="Solana Corp, PsyOptions Investor"/>
-          <div>Solana Corp</div>
+          <img src={LogoI2} alt="Solana Cap, PsyOptions Investor"/>
+          <div>Solana Cap</div>
         </div>
         <div>
           <img src={LogoI3} alt="GBV, PsyOptions Investor"/>
