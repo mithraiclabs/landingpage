@@ -11,7 +11,7 @@ export const formatLargeCurrency = (amount) => {
       display = `${(floored/1_000).toFixed(1)}K`;
       break;
     case 2:
-      display = `${(floored/1_000_000).toFixed(1)}M`;
+      display = `${(floored/1_000_000).toFixed(1)}m`;
       break;
     case 3:
       display = `${(floored/1_000_000_000).toFixed(1)}B`;
