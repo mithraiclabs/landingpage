@@ -10,7 +10,7 @@ import Infographic from "../images/psy_token_infographic.png";
 const Token = () => {
   return (
     <div className="psyoptions psyoptions-token">
-      <Seo title="Home" />
+      <Seo title="Psy Token" />
       <Header />
       <main className="p-content">
         <img src={Infographic} alt="PsyOptions Token" />
