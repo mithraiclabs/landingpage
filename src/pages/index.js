@@ -10,7 +10,7 @@ import IndexAirdrop from "../components/IndexAirdrop";
 import IndexLaunch from "../components/IndexLaunch";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Relationships from "../components/Relationships";
+import Relationships from "../components/IndexRelationships";
 import { FaArrowCircleDown, FaArrowCircleUp } from "react-icons/fa";
 
 const Index = () => {
@@ -102,14 +102,14 @@ const Index = () => {
         </div>
       </main>
       <Footer />
-        <div className="anchor-navigation">
-          <div className="p-button" onClick={handleClick} onKeyDown={handleKeyDown} role="button" tabIndex="0">
-            {
-              (lastInView === list.length - 1) ? (<><FaArrowCircleUp /> {list[0][0]}</>)
-                                               : (<><FaArrowCircleDown /> {list[lastInView + 1][0]}</>)
-            }
-          </div>
+      <div className="anchor-navigation">
+        <div className="p-button" onClick={handleClick} onKeyDown={handleKeyDown} role="button" tabIndex="0">
+          {
+            (lastInView === list.length - 1) ? (<><FaArrowCircleUp /> {list[0][0]}</>)
+                                             : (<><FaArrowCircleDown /> {list[lastInView + 1][0]}</>)
+          }
         </div>
+      </div>
     </div>
   );
 };
