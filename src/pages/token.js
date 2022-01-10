@@ -1,5 +1,5 @@
 import "../styles/styles.global.scss";
-import "../styles/token.scss";
+import "../styles/Token.scss";
 
 import React from "react";
 import Seo from "../components/seo";
