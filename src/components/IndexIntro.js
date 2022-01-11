@@ -24,11 +24,8 @@ const IndexIntro = () => {
             Read our docs
           </a>
         </div>
-        <div className="iia-first">
-          A first for blockchain. Winner of the{" "}
-          <a href="https://solana.com/news/winners-of-the-solana-x-serum-defi-hackathon">
-            Solana X Serum DeFi Hackathon
-          </a>
+        <div className="iia-tvl">
+          {tvl && <h1>TVL: ${formatLargeCurrency(tvl)}</h1>}
         </div>
         <figure className="iia-built-with">
           <span>Built with Solana</span>&nbsp;
@@ -41,7 +38,6 @@ const IndexIntro = () => {
           </a>
         </figure>
       </div>
-      {tvl && <div><h1>TVL: ${formatLargeCurrency(tvl)}</h1></div>}
       <img
         className="ii-retro-logo"
         src={RetroLogo}

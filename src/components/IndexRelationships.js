@@ -1,8 +1,10 @@
 import React from "react";
-import "../styles/Relationships.scss";
+import "../styles/IndexRelationships.scss";
 import LogoD1 from "../images/friktion.png";
 import LogoD2 from "../images/tap-finance.png";
 import LogoD3 from "../images/katana.png";
+import LogoD4 from "../images/chest.jpg";
+import LogoD5 from "../images/solfire.png";
 import LogoI1 from "../images/alameda.png";
 import LogoI2 from "../images/solana.jpg";
 import LogoI3 from "../images/gbv.jpg";
@@ -32,6 +34,14 @@ const Relationships = () => {
         <div>
           <img src={LogoD3} alt="Katana, a dapp built on PsyOptions"/>
           <div>Katana</div>
+        </div>
+        <div>
+          <img src={LogoD4} alt="Chest, a dapp built on PsyOptions"/>
+          <div>Chest</div>
+        </div>
+        <div>
+          <img src={LogoD5} alt="Solfire, a dapp built on PsyOptions"/>
+          <div>Solfire</div>
         </div>
       </div>
     <h1>Investors</h1>

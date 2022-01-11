@@ -74,14 +74,8 @@
       }
     }
   }
-  .iia-first {
-    // Temporary as we iterate on content
-    display: none;
-    margin-bottom: $textBlockMarginMobile;
-    a {
-      color: $linkBlue;
-      text-decoration: none;
-    }
+  .iia-tvl {
+    
   }
   .iia-built-with {
     align-content: center;
@@ -101,7 +95,7 @@
     }
   }
   .iia-button-group {
-    margin-bottom: 36px;
+    margin-bottom: 28px;
   }
   .iia-button-group .p-button:first-of-type {
     background: $cyan;
