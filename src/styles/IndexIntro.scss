@@ -96,11 +96,16 @@
   }
   .iia-button-group {
     margin-bottom: 28px;
-  }
-  .iia-button-group .p-button:first-of-type {
-    background: $cyan;
-    color: black;
-    font-weight: 700;
+    .p-button:first-of-type {
+      background: $cyan;
+      color: black;
+      font-weight: 700;
+    }
+    .p-button:nth-of-type(2) {
+      background: $cyan;
+      color: black;
+      font-weight: 700;
+    }
   }
   .ii-retro-logo {
     opacity: 0.55;

@@ -45,6 +45,7 @@ const Header = () => {
         <ul>
           <li><a href="https://trade.psyoptions.io/#/markets">Markets</a></li>
           <li><a href="https://trade.psyoptions.io/#/portfolio">Portfolio</a></li>
+          <li><a href="https://app.psyfi.io">Vaults</a></li>
           <li><a href="https://docs.psyoptions.io">Docs</a></li>
           <li><a href="https://forum.psyoptions.io">Forum</a></li>
         </ul>
