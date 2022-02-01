@@ -100,9 +100,7 @@ const Index = () => {
           }}
           className="alert"
         >
-          Beware of scams! Do your own research. PSY token does not start
-          trading until Jan 21, 14:00 UTC only on FTX and Gate. PSY not
-          available in the United States or prohibited jurisdictions
+          Beware of scams! Do your own research. PSY token info found <a href="https://docs.psyoptions.io/psy-token/tokenomics/" target="_blank">here</a>. New token info page coming soon!
         </Alert>
       </Collapse>
       <Header />
