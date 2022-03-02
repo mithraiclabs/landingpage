@@ -79,22 +79,10 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-function useWidth() {
-    const theme = useTheme();
-    const keys = [...theme.breakpoints.keys].reverse();
-    return (
-      keys.reduce((output, key) => {
-        // eslint-disable-next-line react-hooks/rules-of-hooks
-        const matches = useMediaQuery(theme.breakpoints.up(key));
-        return !output && matches ? key : output;
-      }, null) || 'xs'
-    );
-  }
 
 const DevAreChart = () => {
   const classes = useStyles();
-  const isDesktop = useWidth();
-
+  const isDesktop = useMediaQuery('(min-width:1200px)');
 
   return (
     <Box>
@@ -116,7 +104,7 @@ const DevAreChart = () => {
 
         <Margin bottom={20} />
         <ArgumentAxis valueMarginsEnabled={false} />
-        <Legend  verticalAlignment={isDesktop === 'md' || 'lg' || 'xl' ? "top" : 'bottom' } horizontalAlignment={isDesktop === 'md' || 'lg' || 'xl'? "right" : 'center' } />
+        <Legend  verticalAlignment={isDesktop ? "top" : 'bottom' } horizontalAlignment={isDesktop? "right" : 'center' } />
       </Chart>
     </Box>
   );
