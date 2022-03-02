@@ -48,6 +48,7 @@ const Header = () => {
           <li><a href="https://app.psyfi.io">Vaults</a></li>
           <li><a href="https://docs.psyoptions.io">Docs</a></li>
           <li><a href="https://forum.psyoptions.io">Forum</a></li>
+
         </ul>
         <div className="header-mobile-icon" onClick={handleClick} onKeyDown={handleKeyDown} tabIndex="0" role="button">
           {showMobileMenu ? <FaTimes /> : <FaBars />}
