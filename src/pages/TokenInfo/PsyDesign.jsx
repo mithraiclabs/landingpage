@@ -72,25 +72,25 @@ const PsyDesignCard = styled(Paper)(() => ({
 
 const psyDesignCardData = [
   {
-    icon: '/logo.svg',
+    icon: '/images/psyDesign_tokens_icon.png',
     title: `${TOKENS}`,
     subTitle: `${PSYOPTIONS_PSY}`,
     description: `${PSY_DESIGN_CARD_TOKENS_DESCRIPTION}`,
   },
   {
-    icon: '/logo.svg',
+    icon: '/images/psyDesign_trustless_icon.png',
     title: `${TRUSTLESS}`,
     subTitle: `${PSY_OPTIONS}`,
     description: `${PSY_DESIGN_CARD_PSY_OPTIONS_DESCRIPTION}`,
   },
   {
-    icon: '/logo.svg',
+    icon: '/images/psyDesign_utility_icon.png',
     title: `${UTILITY}`,
     subTitle: `${PSY}`,
     description: `${PSY_DESIGN_CARD_UTILITY_DESCRIPTION}`,
   },
   {
-    icon: '/logo.svg',
+    icon: '/images/psyDesign_staking_icon.png',
     title: `${STAKING}`,
     subTitle: '',
     description: `${PSY_DESIGN_CARD_STAKING_DESCRIPTION}`,
@@ -134,7 +134,7 @@ const PsyDesign= memo(() => {
             }}
           >
             <PsyDesignCard>
-              <Box component="img" src="/logo.svg" loading="lazy" height="60px" mb={2} />
+              <Box component="img" src="/images/psyDesign_governance_icon.png" loading="lazy" height="60px" mb={2} />
               <Box className={classes.heading}>{GOVERNANCE}</Box>
               <Typography className={classes.description}>
                 <span style={{ color: 'white' }}>{PSY} </span>

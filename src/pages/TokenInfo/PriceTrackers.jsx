@@ -18,7 +18,7 @@ const PriceTrackers= memo(({ iconLink, title, routeLink }) => {
       }}
     >
       <Box display="flex">
-        <Box component="img" src={iconLink} />
+        <Box component="img" src={iconLink} width="20px" />
         <Box ml={1}>{title}</Box>
       </Box>
       <Box color="white" mt={1}>

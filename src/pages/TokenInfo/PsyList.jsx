@@ -18,7 +18,7 @@ const useStyles = makeStyles(() => ({
     display: 'flex',
     padding: '8px 12px',
     width: '170px',
-    height: '60px',
+    height: '55px',
     flexWrap: 'nowrap',
     borderRadius:'15px'
   },

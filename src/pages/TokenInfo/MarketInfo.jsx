@@ -55,15 +55,15 @@ const PsyListData = [
     routeLink:"/"
   },
   {
-    logo:"/images/image 10.png",
+    logo:"/images/gateio.png",
     routeLink:"/"
   },
   {
-    logo:"/images/image 10.png",
+    logo:"/images/ascend.png",
     routeLink:"/"
   },
   {
-    logo:"/images/image 10.png",
+    logo:"/images/serum.png",
     routeLink:"/"
   },
 ]
@@ -82,20 +82,20 @@ const MarketInfo = () => {
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
           <MarketInfoCard>
-            <Box className={classes.heading} mt={5}>
+            <Box className={classes.heading} mt={4}>
              {PRICE_TRACKERS}
             </Box>
-            <PriceTrackers iconLink="/images/image 6.png" title="CoinMarketCap" routeLink="/" />
-            <PriceTrackers iconLink="/images/image 6.png" title="CoinGecko" routeLink="/" />
+            <PriceTrackers iconLink="/images/coinMarketCap.png" title="CoinMarketCap" routeLink="/" />
+            <PriceTrackers iconLink="/images/coinGecko.png" title="CoinGecko" routeLink="/" />
             <Box className={classes.heading} mt={3}>
               {BLOCK_EXPLORERS}
             </Box>
-            <PriceTrackers iconLink="/images/image 6.png" title="PSY SPL" routeLink="/" />
+            <PriceTrackers iconLink="/images/psyspl.png" title="PSY SPL" routeLink="/" />
           </MarketInfoCard>
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
           <MarketInfoCard>
-            <Box className={classes.heading} mt={5}>
+            <Box className={classes.heading} mt={4}>
               {PSY_IS_LISTED_ON}
             </Box>
             {PsyListData.map((item, index)=>(
