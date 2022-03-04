@@ -12,27 +12,27 @@ const dataSource = [
     },
     {
       country: "Contributor Fund",
-      medals: 10
+      medals: 8
     },
     {
       country: "PSY Liquidity Provisions",
-      medals: 60
+      medals: 2
     },
     {
       country: "Initial Exchange Offering",
-      medals: 49
+      medals: 3
     },
     {
       country: "Private Round 2",
-      medals: 46
+      medals: 7
     },
     {
       country: "Private Round 1",
-      medals: 43
+      medals: 5
     },
     {
       country: "Core Team & Advisors",
-      medals: 41
+      medals: 15
     }
   ];
   
