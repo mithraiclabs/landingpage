@@ -5,7 +5,8 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const PriceTrackers= memo(({ iconLink, title, routeLink }) => {
   return (
-    <Box
+    <a href={routeLink} target="_blank">
+      <Box
       sx={{
         textDecoration: 'none',
         marginBottom: '10px',
@@ -25,6 +26,7 @@ const PriceTrackers= memo(({ iconLink, title, routeLink }) => {
         <ArrowForwardIosIcon fontSize="medium" />
       </Box>
     </Box>
+    </a>
   );
 });
 

@@ -59,19 +59,19 @@ const useStyles = makeStyles(() => ({
 const PsyListData = [
   {
     logo:`${ftx}`,
-    routeLink:"/"
+    routeLink:"https://ftx.com/trade/PSY/USD"
   },
   {
     logo:`${gateio}`,
-    routeLink:"/"
+    routeLink:"https://www.gate.io/tradepro/PSY_USDT"
   },
   {
     logo:`${ascend}`,
-    routeLink:"/"
+    routeLink:"https://ascendex.com/en/cashtrade-spottrading/usdt/psy"
   },
   {
     logo:`${serum}`,
-    routeLink:"/"
+    routeLink:"https://dex.bonfida.org/#/market/9WDPi1uZVxBwZY4NXy7A3nGfxAzxvNaS56iHk3cBhQ3U"
   },
 ]
 
@@ -92,12 +92,12 @@ const MarketInfo = () => {
             <Box className={classes.heading} mt={4}>
              {PRICE_TRACKERS}
             </Box>
-            <PriceTrackers iconLink={coinMarketCap} title="CoinMarketCap" routeLink="/" />
-            <PriceTrackers iconLink={coinGecko} title="CoinGecko" routeLink="/" />
+            <PriceTrackers iconLink={coinMarketCap} title="CoinMarketCap" routeLink="https://coinmarketcap.com/currencies/psy-options/" />
+            <PriceTrackers iconLink={coinGecko} title="CoinGecko" routeLink="https://www.coingecko.com/en/coins/psyoptions" />
             <Box className={classes.heading} mt={3}>
               {BLOCK_EXPLORERS}
             </Box>
-            <PriceTrackers iconLink={psyspl} title="PSY SPL" routeLink="/" />
+            <PriceTrackers iconLink={psyspl} title="PSY SPL" routeLink="https://explorer.solana.com/address/PsyFiqqjiv41G7o5SMRzDJCu4psptThNR2GtfeGHfSq" />
           </MarketInfoCard>
         </Grid>
         <Grid item xs={12} sm={12} md={4}>

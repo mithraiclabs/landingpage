@@ -30,6 +30,7 @@ const useStyles = makeStyles(() => ({
 const PsyList = memo(({ logo, routeLink }) => {
   const classes = useStyles();
   return (
+    <a href={routeLink} target="_blank">
       <Box className={classes.root}>
         <Typography className={classes.logoContainer}>
           <Box component="img" src={logo} width="100%" style={{ margin: 'auto' }} />
@@ -38,6 +39,7 @@ const PsyList = memo(({ logo, routeLink }) => {
           <ArrowForwardIosIcon fontSize="medium" />
         </Box>
       </Box>
+    </a>
   );
 });
 
