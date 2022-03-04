@@ -1,10 +1,9 @@
-import "../styles/styles.global.scss";
-import "../styles/Token.scss";
+import "../styles/styles.global.scss"
 
-import React from "react";
-import Seo from "../components/seo";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import React from "react"
+import Seo from "../components/seo"
+import Footer from "../components/Footer"
+import Header from "../components/Header"
 import TokenInfo from "./TokenInfo"
 
 const Token = () => {
@@ -13,11 +12,11 @@ const Token = () => {
       <Seo title="Psy Token" />
       <Header />
       <main className="p-content">
-        <TokenInfo/>
+        <TokenInfo />
       </main>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Token;
+export default Token
