@@ -5,6 +5,12 @@ import Grid from '@mui/material/Grid';
 import List from '@mui/material/List';
 import { FEES, UNLOCKED_TOKEN_DESCRIPTION, FEES_DESCRIPTION_1, FEES_DESCRIPTION_2 } from '../../constants';
 import {theme} from "../../styles/theme"
+import logo from "../../images/logo copy.png"
+import serumLogo from "../../images/image 4.png"
+import vaadinMoneyDeposit from "../../images/vaadin_money-deposit.png"
+import localPostOffice from "../../images/local-post-office.png"
+import frame from "../../images/Frame 112.png"
+
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -128,8 +134,8 @@ const FeeDescription = () => {
           m: '0 auto',
         }}
       >
-        <Box mr={1} component="img" src="/images/logo.png" className={classes.image} />
-        <Box component="img" src="/images/image 4.png" className={classes.image} />
+        <Box mr={1} component="img" src={logo} className={classes.image} />
+        <Box component="img" src={serumLogo} className={classes.image} />
       </Box>
       <Typography className={classes.feeDescriptionContainer}>{FEES_DESCRIPTION_2}</Typography>
       <Box
@@ -139,13 +145,13 @@ const FeeDescription = () => {
       >
         <List style={{ listStyle: 'none' }}>
           <List>
-            <Box component="img" src="/images/vaadin_money-deposit.png" className={classes.image} />
+            <Box component="img" src={vaadinMoneyDeposit} className={classes.image} />
           </List>
           <List style={{ margin: '-100px 0' }}>
-            <Box component="img" src="/images/local-post-office.png" className={classes.image} />
+            <Box component="img" src={localPostOffice} className={classes.image} />
           </List>
           <List>
-            <Box component="img" src="/images/Frame 112.png" className={classes.frameImage} />
+            <Box component="img" src={frame} className={classes.frameImage} />
           </List>
         </List>
       </Box>

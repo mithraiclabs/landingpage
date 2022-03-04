@@ -4,6 +4,14 @@ import { styled } from '@mui/material/styles';
 import makeStyles from '@mui/styles/makeStyles';
 import { TOKEN_INFO_PAGE_HEADING, TOKEN_INFO_PAGE_SUB_HEADING } from '../../constants';
 import {theme} from "../../styles/theme"
+import currencyIcon from "../../images/currency.png"
+import governanceIcon from "../../images/governance.png"
+import lockIcon from "../../images/lock.png"
+import statsIcon from "../../images/stats.png"
+import coinsIcon from "../../images/coins.png"
+
+
+
 
 const SummaryCard = styled(Paper)(() => ({
   backgroundColor: 'transparent',
@@ -13,29 +21,29 @@ const SummaryCard = styled(Paper)(() => ({
 
 const principles = [
   {
-    image: '/images/currency.png',
+    image: `${currencyIcon}`,
     principle: 'Accrue value through utility, not hyperinflation.',
   },
   {
-    image: '/images/governance.png',
+    image: `${governanceIcon}`,
     principle: 'PSY gives specialized governance power over PsyOptions.',
   },
   {
-    image: '/images/lock.png',
+    image: `${lockIcon}`,
     principle:
       ' The majority of PSY tokens are locked up for 4 years which leads to well-aligned incentives for the team, investors, our community, and governance participants.',
   },
   {
-    image: '/images/stats.png',
+    image: `${statsIcon}`,
     principle:
       ' Holders of PSY have the power to upgrade the protocol as they see fit. Anyone with the PSY token can propose a governance action.',
   },
   {
-    image: '/images/coins.png',
+    image: `${coinsIcon}`,
     principle: 'PSY holders can create incentives to reward participation and drive usage of the protocol.',
   },
   {
-    image: '/images/lock.png',
+    image: `${lockIcon}`,
     principle: 'All seed sales have long-term lockups; they are meant for long-term supporters of the PSY ecosystem, not quick profit.',
   },
 ];

@@ -9,6 +9,13 @@ import PriceTrackers from './PriceTrackers';
 import PsyList from './PsyList';
 import {MARKET_INFORMATION, PRICE_TRACKERS, BLOCK_EXPLORERS, PSY_IS_LISTED_ON} from '../../constants'
 import {theme} from "../../styles/theme"
+import ftx from "../../images/image 10.png"
+import gateio from "../../images/gateio.png"
+import ascend from "../../images/ascend.png"
+import serum from "../../images/serum.png"
+import coinMarketCap from "../../images/coinMarketCap.png"
+import coinGecko from "../../images/coinGecko.png"
+import psyspl from "../../images/psyspl.png"
 
 
 const MarketInfoCard = styled(Paper)(() => ({
@@ -51,19 +58,19 @@ const useStyles = makeStyles(() => ({
 
 const PsyListData = [
   {
-    logo:"/images/image 10.png",
+    logo:`${ftx}`,
     routeLink:"/"
   },
   {
-    logo:"/images/gateio.png",
+    logo:`${gateio}`,
     routeLink:"/"
   },
   {
-    logo:"/images/ascend.png",
+    logo:`${ascend}`,
     routeLink:"/"
   },
   {
-    logo:"/images/serum.png",
+    logo:`${serum}`,
     routeLink:"/"
   },
 ]
@@ -85,12 +92,12 @@ const MarketInfo = () => {
             <Box className={classes.heading} mt={4}>
              {PRICE_TRACKERS}
             </Box>
-            <PriceTrackers iconLink="/images/coinMarketCap.png" title="CoinMarketCap" routeLink="/" />
-            <PriceTrackers iconLink="/images/coinGecko.png" title="CoinGecko" routeLink="/" />
+            <PriceTrackers iconLink={coinMarketCap} title="CoinMarketCap" routeLink="/" />
+            <PriceTrackers iconLink={coinGecko} title="CoinGecko" routeLink="/" />
             <Box className={classes.heading} mt={3}>
               {BLOCK_EXPLORERS}
             </Box>
-            <PriceTrackers iconLink="/images/psyspl.png" title="PSY SPL" routeLink="/" />
+            <PriceTrackers iconLink={psyspl} title="PSY SPL" routeLink="/" />
           </MarketInfoCard>
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
