@@ -16,7 +16,7 @@ import Header from "../components/Header"
 import Relationships from "../components/IndexRelationships"
 import { FaArrowCircleDown, FaArrowCircleUp } from "react-icons/fa"
 
-const Index = () => {
+const LandingPage = () => {
   const [lastInView, updateLastInView] = useState(0)
   const [showScamAlert, setShowScamAlert] = useState(true)
 
@@ -148,4 +148,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default LandingPage
