@@ -16,7 +16,7 @@ import Header from "../components/Header"
 import Relationships from "../components/IndexRelationships"
 import { FaArrowCircleDown, FaArrowCircleUp } from "react-icons/fa"
 
-const Index = () => {
+const LandingPage = () => {
   const [lastInView, updateLastInView] = useState(0)
   const [showScamAlert, setShowScamAlert] = useState(true)
 
@@ -91,18 +91,6 @@ const Index = () => {
   return (
     <div className="psyoptions psyoptions-index">
       <Seo title="Home" />
-      <Collapse in={showScamAlert}>
-        <Alert
-          severity="warning"
-          onClose={() => {
-            console.log("*** closing alert")
-            setShowScamAlert(false)
-          }}
-          className="alert"
-        >
-          Beware of scams! Do your own research. PSY token info found <a href="https://docs.psyoptions.io/psy-token/tokenomics/" target="_blank">here</a>. New token info page coming soon!
-        </Alert>
-      </Collapse>
       <Header />
       <main className="p-content">
         <div ref={introRef}>
@@ -148,4 +136,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default LandingPage
