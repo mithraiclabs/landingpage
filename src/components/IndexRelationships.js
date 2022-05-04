@@ -1,8 +1,5 @@
 import React from "react";
 import "../styles/IndexRelationships.scss";
-import LogoD2 from "../images/tap-finance.png";
-import LogoD3 from "../images/katana.png";
-import LogoD4 from "../images/chest.jpg";
 import LogoI1 from "../images/alameda.png";
 import LogoI2 from "../images/solana.jpg";
 import LogoI3 from "../images/gbv.jpg";
@@ -18,22 +15,6 @@ import ProtoFundLogo from "../images/protofund_logo.png";
 const Relationships = () => {
   return (
     <div className="relationships">
-      <h1>Dapps Built on PsyOptions</h1>
-      <div className="r-grid">
-        {/* additional content in follow-up release */}
-        <div>
-          <img src={LogoD2} alt="Tap Finance, a dapp built on PsyOptions"/>
-          <div>Tap Finance</div>
-        </div>
-        <div>
-          <img src={LogoD3} alt="Katana, a dapp built on PsyOptions"/>
-          <div>Katana</div>
-        </div>
-        <div>
-          <img src={LogoD4} alt="Chest, a dapp built on PsyOptions"/>
-          <div>Chest</div>
-        </div>
-      </div>
     <h1>Investors</h1>
       <div className="r-grid">
         {/* additional content in follow-up release */}
