@@ -40,6 +40,7 @@ const Header = () => {
   return(
     <IconContext.Provider value={{ color: "#fff"}}>
       <nav className={`header ${(showMobileMenu) ? 'show-nav' : 'hide-nav'}`}>
+        <script src="https://cdn.usefathom.com/script.js" data-site="QFVSOIRZ" defer></script>
         <div className="header-logo">
           <Link to="/"><img src={companyLogo} alt="PsyOptions Logo Icon" /></Link>
         </div>
