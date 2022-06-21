@@ -20,7 +20,7 @@ const IndexIntro = () => {
           <a href="https://trade.psyoptions.io" className="p-button">
             Start trading
           </a>
-          <a href="https://app.psyfi.io/" className="p-button">
+          <a href="https://psyfi.io/" className="p-button">
             Structured Products
           </a>
           <a href="https://docs.psyoptions.io" className="p-button">

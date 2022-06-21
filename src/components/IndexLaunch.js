@@ -1,6 +1,6 @@
-import "../styles/IndexLaunch.scss";
-import React from "react";
-import background from "../images/Gradient.png";
+import "../styles/IndexLaunch.scss"
+import React from "react"
+import background from "../images/Gradient.png"
 
 const IndexLaunch = () => {
   return (
@@ -8,12 +8,19 @@ const IndexLaunch = () => {
       <div className="ila-content">
         <h1>HOW PSYOPTIONS CAN HELP YOU</h1>
         <div>Hedge against volatile crypto currencies with options.</div>
-        <a href="https://trade.psyoptions.io" className="p-button">Trade</a>
-        <a href="https://app.psyfi.io" className="p-button">Deposit & Earn</a>
+        <a href="https://trade.psyoptions.io" className="p-button">
+          Trade
+        </a>
+        <a href="https://psyfi.io" className="p-button">
+          Deposit & Earn
+        </a>
       </div>
-      <div className="ila-background" style={{backgroundImage: `url(${background})`}} />
+      <div
+        className="ila-background"
+        style={{ backgroundImage: `url(${background})` }}
+      />
     </div>
-  );
+  )
 }
 
-export default IndexLaunch;
+export default IndexLaunch
